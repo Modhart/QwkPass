@@ -17,6 +17,8 @@ body {
     z-index: 99;
     background-color:dodgerblue;
     overflow: hidden;
+    text-align: center;
+     height: 120px;
 }
 ul {
     list-style-type: none;
@@ -24,7 +26,7 @@ ul {
 .nav a {
     font-family:sans-serif;
     float: left;
-    display: block;
+    display: inline-block;
     color: floralwhite;
     text-align: center;
     padding: 14px;
@@ -32,9 +34,20 @@ ul {
     font-size: 12px;
 }
 
+.nav li {
+    display:inline-block;
+}
+
+.nav_text {
+    display: inline-block;
+}
+
 #logo {
-    width: 100px;
-    height: 100px;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    
 }
 @media screen and (max-width: 40em) {
 	.js #menu {
