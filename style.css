@@ -15,11 +15,14 @@ body {
     right: 0;
     left: 0;
     z-index: 99;
-    background-color: #42adf4s;
+    background-color:dodgerblue;
     overflow: hidden;
 }
-
+ul {
+    list-style-type: none;
+}
 .nav a {
+    font-family:sans-serif;
     float: left;
     display: block;
     color: floralwhite;
@@ -29,7 +32,7 @@ body {
     font-size: 12px;
 }
 
-.logo {
+#logo {
     width: 100px;
     height: 100px;
 }
