@@ -1,3 +1,15 @@
+
+@font-face 
+{
+    font-family: Avenir;
+    src: url(“/QwkPass/fonts/AvenirNext.otf”) format(“opentype”);
+}
+
+
+
+
+
+
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	margin:0;
@@ -24,14 +36,16 @@ ul {
     list-style-type: none;
 }
 .nav a {
-    font-family:sans-serif;
+    font-family: 'Avenir', serif;
     float: left;
     display: inline-block;
     color: floralwhite;
     text-align: center;
     padding: 14px;
     text-decoration: none;
+    font-weight: bold;
     font-size: 12px;
+    
     
 }
 
@@ -50,6 +64,7 @@ ul {
     text-align: center;
     
 }
+
 @media screen and (max-width: 40em) {
 	.js #menu {
 		display:none;
