@@ -6,14 +6,10 @@
 }
 
 body {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Avenir', serif;
 	margin:0;
 	padding:0;
 	font-size:100%;
-}
-
-.slicknav_menu {
-	display:none;
 }
 
 .nav {
@@ -25,7 +21,7 @@ body {
     background-color:dodgerblue;
     overflow: hidden;
     text-align: center;
-     height: 120px;
+    height: 70px;
 }
 ul {
     list-style-type: none;
@@ -33,43 +29,79 @@ ul {
 .nav a {
     font-family: 'Avenir', serif;
     float: left;
-    display: inline-block;
     color: floralwhite;
-    text-align: center;
-    padding: 14px;
+    padding-right: 100px;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;    
+}
+.nav_text{
+     padding-top: 20px;
+     font-weight: bold;   
+    align-items: center;
 }
 
 .nav li {
-    display:inline-block;
-   
+    display:inline;
 }
 
-.nav_text {
-    display: inline-block;
-}
-
-.container {
-    padding-top: 120px;
-    padding-left: 20px;
-    text-align:justify;    
-}
-#logo {
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-    text-align: center;
+.features{
+    background-color: aliceblue;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     
 }
 
-@media screen and (max-width: 40em) {
-	.js #menu {
-		display:none;
-	}
-	
-	.js .slicknav_menu {
-		display:block;
-	}
+.smoothScroll {
+  text-decoration: none;
+  font-family: Segoe UI;
+}
+
+.how{
+  background-color: #C6DEFF;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 50px;    
+}
+
+.pricing{
+  background-color: aliceblue;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 50px;    
+}
+
+.setup{
+    background-color: #C6DEFF;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 150px;    
+}
+
+.container {
+    padding-top: 50px;
+    text-align:justify;    
+}
+
+.footer{
+    background-color: dodgerblue;
+    color: floralwhite;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 50px; 
+}
+
+#foothead{
+    display: inline-block;
+    padding-right: 40px;
+}
+#logo {
+    max-width: 100%;
+    display: inline-block;
+    float: left;
+    
 }
