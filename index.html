@@ -8,43 +8,62 @@
   <meta name="description" content="QwkPass">
   <meta name="author" content="JBD">
 
-  <link rel="stylesheet" type="text/css" href="dist/slicknav.css" />
-  <link rel="stylesheet" type="text/css" href="style.css" />  
+    <link rel="stylesheet" type="text/css" href="style.css" />  
 
 </head>
 
 <body>
-<div id="mobileMenu">
-        <div class="slicknav_menu">
-            <a href="#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;">
-                <span class="slicknav_menutxt">QwkPass</span>
-                <span class="slicknav_icon"><span class="slicknav_icon-bar"></span>
-                <span class="slicknav_icon-bar"></span>
-                <span class="slicknav_icon-bar"></span></span>
-            </a>
-            <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
-					<li><a href="#features" role="menuitem" tabindex="-1">Features</a></li>
-					<li><a href="#how" role="menuitem" tabindex="-1">How it works?</a></li>
-					<li><a href="#pricing" role="menuitem" tabindex="-1">Pricing</a></li>
-					<li><a href="#setup" role="menuitem" tabindex="-1">Account Setup</a></li>
-            </ul></div></div>
 <div class="nav">
-	<div>
-        <div id=logo><img src="images/ogo.png"></div>
-		<div>
+    <div id=logo><a href="#"><img src="images/ogo.png"></a></div>
 		  <div class="nav_text">
 				<ul>
 					<li><a href="#features">Features</a></li>
 					<li><a href="#how">How it works?</a></li>
 					<li><a href="#pricing">Pricing</a></li>
-					<li><a href="#setup">Account Setup</a></li>
+					<li><a href="#setup" rel="#setup" name="setup">Account Setup</a></li>
 				</ul>
 			</div>
-		</div>
-  </div>
+</div>
+<div class="container">
+<div class="features" >
+<h2>Features</h2>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla, purus in porttitor pellentesque, erat arcu tincidunt diam, dapibus faucibus leo mauris at sapien. In porttitor vehicula sodales. Vivamus massa neque, facilisis eu felis ut, aliquet convallis nisi. Nam elementum tellus vitae gravida fermentum. Nullam et imperdiet leo. Integer ut euismod lorem, in placerat lacus. Curabitur bibendum arcu ut feugiat commodo. Suspendisse ut mi vel orci ullamcorper tincidunt. Nam vitae fringilla nibh. Nullam hendrerit blandit velit eu hendrerit.    
+</p>       
+</div>
+<div class="how">
+<h2>How it works?</h2>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla, purus in porttitor pellentesque, erat arcu tincidunt diam, dapibus faucibus leo mauris at sapien. In porttitor vehicula sodales. Vivamus massa neque, facilisis eu felis ut, aliquet convallis nisi. Nam elementum tellus vitae gravida fermentum. Nullam et imperdiet leo. Integer ut euismod lorem, in placerat lacus. Curabitur bibendum arcu ut feugiat commodo. Suspendisse ut mi vel orci ullamcorper tincidunt. Nam vitae fringilla nibh. Nullam hendrerit blandit velit eu hendrerit.    
+</p>       
+</div>
+<div class="pricing">
+<h2>Pricing</h2>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla, purus in porttitor pellentesque, erat arcu tincidunt diam, dapibus faucibus leo mauris at sapien. In porttitor vehicula sodales. Vivamus massa neque, facilisis eu felis ut, aliquet convallis nisi. Nam elementum tellus vitae gravida fermentum. Nullam et imperdiet leo. Integer ut euismod lorem, in placerat lacus. Curabitur bibendum arcu ut feugiat commodo. Suspendisse ut mi vel orci ullamcorper tincidunt. Nam vitae fringilla nibh. Nullam hendrerit blandit velit eu hendrerit.    
+</p>       
+</div>
+<div class="setup" id="setup">
+<h2>Account Setup</h2>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla, purus in porttitor pellentesque, erat arcu tincidunt diam, dapibus faucibus leo mauris at sapien. In porttitor vehicula sodales. Vivamus massa neque, facilisis eu felis ut, aliquet convallis nisi. Nam elementum tellus vitae gravida fermentum. Nullam et imperdiet leo. Integer ut euismod lorem, in placerat lacus. Curabitur bibendum arcu ut feugiat commodo. Suspendisse ut mi vel orci ullamcorper tincidunt. Nam vitae fringilla nibh. Nullam hendrerit blandit velit eu hendrerit.    
+</p>       
+</div>    
 </div>
 </body>
 </html>
 
-<script src="dist/jquery.slicknav.min.js"></script>
 
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBIzEsqTlE5GvUHS1ZBxR8BNDnwGYzfxk4",
+    authDomain: "qwkpass.firebaseapp.com",
+    databaseURL: "https://qwkpass.firebaseio.com",
+    projectId: "qwkpass",
+    storageBucket: "qwkpass.appspot.com",
+    messagingSenderId: "508115255068"
+  };
+  firebase.initializeApp(config);
+</script>
