@@ -34,21 +34,42 @@ body {
 .nav_text{
 	font-weight: bold;   
     align-items: center;
+    font-family: 'Avenir', serif;
 }
 
 
 .nav li {
     display:inline;
+    
 }
 
 .features{
 	background-color: aliceblue;
 	padding-top: 50px;
-	padding-left: 30px;
+	padding-left: 20px;
 	padding-right: 50px;
 	padding-bottom: 50px;
 }
+#features-intro{
+text-align: center;
+font-style: oblique;
+margin-right: 150px;
+margin-left: 150px;
+padding-bottom: 20px;
+}
 
+.body_imgs{
+    float: center;
+    box-shadow: 0px 0px 55px 6px dodgerblue;
+}
+
+#features-bullets{
+list-style:none;
+text-align: center;
+margin-right: 280px;
+margin-left: 280px;
+padding-top: 20px;
+}
 
 .smoothScroll {
   text-decoration: none;
@@ -58,15 +79,26 @@ body {
 .how{
   background-color: #C6DEFF;
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-right: 50px;
     padding-bottom: 50px;    
 }
 
+#steps{
+    text-align: left;
+}
+
+#steps b{
+    font-size: 30px;
+}
+
+#step1img{
+    float:center;
+}
 .pricing{
   background-color: aliceblue;
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-right: 50px;
     padding-bottom: 50px;    
 }
@@ -74,21 +106,21 @@ body {
 .setup{
     background-color: #C6DEFF;
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-right: 50px;
     padding-bottom: 150px;    
 }
 
 .container {
     padding-top: 50px;
-    text-align:justify;    
+    text-align:center;
 }
 
 .footer{
     background-color: dodgerblue;
     color: floralwhite;
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-right: 50px;
     padding-bottom: 50px; 
 }
@@ -101,5 +133,5 @@ body {
     max-width: 100%;
     display: inline-block;
     float: center;
-    
+    padding-left: 50px;
 }
