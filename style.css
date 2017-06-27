@@ -45,7 +45,7 @@ body {
 }
 
 .hero {
-	background-image: url("images/back.jpg");
+	background-image: url("https://raw.githubusercontent.com/jbajaj12/QwkPass/master/images/back.jpg");
 	height: 50%;
 	background-position: center;
     background-repeat: no-repeat;
