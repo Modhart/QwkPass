@@ -52,13 +52,14 @@ body {
 	padding-bottom: 50px;
 }
 #features-intro{
-text-align: center;
-font-style: oblique;
-margin-right: 150px;
-margin-left: 150px;
-padding-top: 100px;
-padding-bottom: 20px;
-color: #888B8D;
+	text-align: center;
+	font-style: oblique;
+	margin-right: 150px;
+	margin-left: 150px;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	color: #888B8D;
+	font-size: 12px;
 }
 
 .body_imgs{
@@ -79,11 +80,11 @@ color: #888B8D;
 }
 
 .how{
-  background-color: #C6DEFF;
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 50px;
-    padding-bottom: 300px;    
+	background-color: #C6DEFF;
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 50px;
+	padding-bottom: 150px;
 }
 
 #how_content{
@@ -104,23 +105,25 @@ color: #888B8D;
 }
 
 #step1img{
-    float:left;
-    padding-left: 15%;
+	float: left;
+	padding-left: 10%;
 }
 .pricing{
-  background-color: aliceblue;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 50px;
-    padding-bottom: 50px;    
+	background-color: aliceblue;
+	padding-top: 30px;
+	padding-left: 20px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	text-align: center;
 }
 
 .setup{
-    background-color: #C6DEFF;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 50px;
-    padding-bottom: 150px;    
+	background-color: #C6DEFF;
+	padding-top: 30px;
+	padding-left: 20px;
+	padding-right: 50px;
+	padding-bottom: 150px;
+	text-align: center;
 }
 
 .container {
@@ -151,5 +154,3 @@ color: #888B8D;
 #fsteps {
     color: #888B8D;
 }
-
-
