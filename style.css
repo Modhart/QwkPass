@@ -66,11 +66,9 @@ color: #888B8D;
 }
 
 #features-bullets{
-list-style:none;
 text-align: center;
-margin-right: 280px;
-margin-left: 280px;
-padding-top: 20px;
+height:auto;
+margin-top: 30px;
 color: #888B8D;
 }
 
