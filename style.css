@@ -44,6 +44,17 @@ body {
     
 }
 
+.hero {
+	background-image: url("images/back.jpg");
+	height: 50%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;	
+	padding-top: 300px;
+	padding-bottom: 300px;
+}
+
 .features{
 	background-color: aliceblue;
 	padding-top: 30px;
@@ -52,14 +63,12 @@ body {
 	padding-bottom: 50px;
 }
 #features-intro{
-	text-align: center;
+	text-align: justify;
 	font-style: oblique;
 	margin-right: 150px;
 	margin-left: 150px;
-	padding-top: 100px;
-	padding-bottom: 20px;
-	color: #888B8D;
-	font-size: 12px;
+	color: #FFFFFF;
+	font-size: 18px;
 }
 
 .body_imgs{
@@ -127,8 +136,8 @@ color: #888B8D;
 }
 
 .container {
-    padding-top: 50px;
-    text-align:center;
+	padding-top: 50px;
+	text-align: center;
 }
 
 .footer{
