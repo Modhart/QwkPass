@@ -144,6 +144,13 @@ color: #888B8D;
 	margin-right: 50px;
 }
 
+#pricing-box-1-content {
+	border-top: 1px solid #d9dadc;
+    border-bottom: 1px solid #d9dadc;
+    padding: 34px 0 26px;
+    margin: 4px 0 28px;
+}
+
 .pricing-box-2 {
 	background-color: #C6DEFF;
 	border-collapse: separate; 
