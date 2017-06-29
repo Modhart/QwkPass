@@ -4,6 +4,7 @@
     src: url(“/QwkPass/fonts/AvenirNext.otf”) format(“opentype”);
 }
 
+
 body {
 	font-family: Helvetica, sans-serif;
 	margin:0;
@@ -125,6 +126,46 @@ color: #888B8D;
 	padding-right: 50px;
 	padding-bottom: 50px;
 	text-align: center;
+}
+
+.pricing-list{
+	margin-bottom: 300px;
+}
+.pricing-box-1 {
+	background-color: #C6DEFF;
+	border-radius: 15px 50px;
+	opacity: 0.5;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+	height: 250px;
+	float: left;
+	display: inline-block;
+	width: 20%;
+	margin-left: 150px;
+	margin-right: 50px;
+}
+
+.pricing-box-2 {
+	background-color: #C6DEFF;
+	border-collapse: separate; 
+	border-radius: 15px 50px;
+	opacity: 0.5;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+	height: 250px;
+	float: left;
+	display: inline-block;
+	width: 20%;
+	margin-right: 50px;
+}
+
+.pricing-box-3 {
+	background-color: #C6DEFF;
+	border-radius: 15px 50px;
+	opacity: 0.5;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+	height: 250px;
+	float: left;
+	display: inline-block;
+	width: 20%;
 }
 
 .setup{
