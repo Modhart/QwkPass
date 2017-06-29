@@ -8,6 +8,7 @@
   <meta name="description" content="QwkPass">
   <meta name="author" content="JBD">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="/js/scroll.js"></script>
     <style type="text/css">
     .container .hero #features-intro {
 	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
@@ -17,9 +18,12 @@
 }
     </style>
 </head>
-
 <body>
-<div class="nav">
+  
+  
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="nav_container">
     <div id=logo><a href="#"><img src="images/ogo.png"></a></div>
 		  <div class="nav_text">
 				<ul>
@@ -28,8 +32,11 @@
 					<li><a class="smoothScroll" href="#pricing">Pricing</a></li>
 					<li><a class="smoothScroll" href="#setup">Account Setup</a></li>
 				</ul>
-			</div>
+			  </div>
 </div>
+</nav> 
+
+
 <div class="container">
 <div class="hero">
       <div id="features-intro">
@@ -85,39 +92,6 @@
 </div>
 </div>
 <div class="pricing" id="pricing">
-
-<div class="pricing-list">
-<div class="pricing-box-1">
-  <h4>The Everyday</h4>
-	<div id="pricing-box-1-content">
-		<ul>
-			<li>15 % off</li>
-			<li>Within 2 hr window</li>
-			<li>Work around your schedule</li>
-		</ul>
-	</div>
-</div>
- <div class="pricing-box-2">
-   <h4>The Part-Timer</h4>
- 	<div id="pricing-box-1-content">
-		<ul>
-			<li>15 % off</li>
-			<li>Within 2 hr window</li>
-			<li>Work around your schedule</li>
-		</ul>
-	</div>
- </div>
- <div class="pricing-box-3">
-   <h4>The Sporadic</h4>
- 	<div id="pricing-box-1-content">
-		<ul>
-			<li>15 % off</li>
-			<li>Within 2 hr window</li>
-			<li>Work around your schedule</li>
-		</ul>
-	</div>
- </div>
- </div>
   <h2>Pricing</h2>
     <h3>Various payment plans for all kinds of travelers</h3>
 <p>The QwkPass tag will be available to all users who wish to get paperless at the terminals and enjoy the benefits of speeding through the terminals to board their transit vehicle. 
@@ -126,14 +100,45 @@
 <h3>Commuter Benefits</h3>
 <p> With QwkPass, everyday commuters will be able to enjoy the benefits of discounted subscriptions for public transit use.
 </p>
-<h4>The everyday commuter</h4>
-<p> will be discounted 15% on all rides during a 2 hour windows that the user can split and shape to their schedules.
-</p>
-<h4>The part time commuter</h4> 
-<p>who commutes no more than 4 days will be able to enjoy 10% on all rides during a 2 hour window.</p>
-<h4>The sporadic commuter</h4> 
-<p>who commutes at least 2-4 days will be able to enjoy 8% on all rides during a 2 hour window. </p>
+<div class="pricing-list">
+<div class="pricing-box-1">
+  <h4>The Everyday</h4>
+	<div id="pricing-box-1-content">
+		<ul>
+		  <li>Commutes everyday</li>
+			<li>15 % off</li>
+			<li>Within 2 hr window</li>
+			<li>Work around your schedule</li>
+		</ul>
+	</div>
+	<button class="button">Apply</button>
 </div>
+ <div class="pricing-box-2">
+   <h4 >The Part-Timer</h4>
+ 	<div id="pricing-box-1-content">
+		<ul>
+		  <li>Commutes no more than 4 days</li>
+			<li>10 % off</li>
+			<li>Within 2 hr window</li>
+			<li>Work around your schedule</li>
+		</ul>
+	</div>
+	<button class="button">Apply</button>
+ </div>
+ <div class="pricing-box-3">
+   <h4>The Sporadic</h4>
+ 	<div id="pricing-box-1-content">
+		<ul>
+		  <li>Commutes at least 2-4 days</li>
+			<li>8 % off</li>
+			<li>Within 2 hr window</li>
+			<li>Work around your schedule</li>
+		</ul>
+	</div>
+	<button class="button">Apply</button>
+ </div>
+ </div>
+ </div>
 <div class="setup" id="setup">
 <h2>Account Setup</h2>
     <h3>Setup your QwkPass today for fluid transactions</h3>
@@ -205,7 +210,9 @@ $(function() {
 
 <!-- Bootstrap Core JS -->
 <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/navshrink.js"></script>
+<script src="/node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
+<script src="/js/scroll.js"></script>
+<script src="/jquery-1.11.3.min.js"></script>
 
 </body>
 </html>
