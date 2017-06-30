@@ -13,46 +13,45 @@ body {
 	font-weight: 400;
 }
 
-nav.navbar{
+#nav{
   background-color:dodgerblue;
+  height: 15px;
    /*Animation*/
    -webkit-transition: all 0.4s ease;
    transition: all 0.4s ease;
 }
 
-nav.navbar.shrink {
-  min-height: 35px;
-}
-
-nav {
+#nav {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 99;
-    background-color:black;
-    opacity: 0.75;
+    background-color:dodgerblue;
     overflow: hidden;
     text-align: center;
     height: 110px;
 }
 
-.nav a {
+#nav shrink {
+  height: 15px;
+}
+
+#nav a {
 	font-family: 'Avenir', serif;
-	float: center;
 	color: floralwhite;
 	padding-right: 100px;
 	text-decoration: none;
 	align-self: center;
 }
-.nav_text{
+#nav_text{
 	font-weight: bold;   
     align-items: center;
     font-family: 'Avenir', serif;
 }
 
 
-.nav li {
+#nav li {
     display:inline;
     
 }
