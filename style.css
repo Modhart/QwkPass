@@ -6,7 +6,7 @@
 
 /*-----------------------------------General Page ----------------------------------------*/
 body {
-	font-family: Helvetica, sans-serif;
+	font-family: AvenirNext, sans-serif;
 	margin:0;
 	padding:0;
 	font-size: 20px;
@@ -26,10 +26,11 @@ header.smaller #logo{
 header.smaller {
 	height:50px;
 	font-size: smaller;
+	opacity: 1;
 }
 
 header.smaller a{
-line-height: 40px;
+line-height: 30px;
 }
 header {
     position: fixed;
@@ -43,7 +44,7 @@ header {
 
     overflow: hidden;
     text-align: center;
-    height: 115px;
+    height: 180px;
     width:100%;
     
     
@@ -70,7 +71,8 @@ header a {
 header {
 	font-weight: bold;   
     align-items: center;
-    font-family: 'Avenir', serif;
+    font-family: Avenir;
+    opacity: 0.8;
 }
 
 
@@ -82,7 +84,10 @@ header #logo {
     max-width: 100%;
     display: inline-block;
     float: center;
-    padding-left: 50px;
+    height: auto;
+    font-size: 25px;
+    color: floralwhite;
+    /*padding-left: 50px;*/
     
         -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -104,7 +109,7 @@ header #logo {
 
 /*-----------------------------------Features ----------------------------------------*/
 .features{
-	background-color: aliceblue;
+	background-color: #DFFFFF;
 	/*background-image: url("https://github.com/jbajaj12/QwkPass/blob/master/images/GoogleMap.jpg");*/
 	padding-top: 30px;
 	padding-left: 20px;
@@ -183,7 +188,7 @@ color: #001f3f;
 
 /*-----------------------------------Pricing ----------------------------------------*/
 .pricing{
-	background-color: aliceblue;
+	background-color: #DFFFFF;
 	padding-top: 30px;
 	padding-left: 20px;
 	padding-right: 50px;
@@ -196,10 +201,10 @@ color: #001f3f;
 }
 .pricing-list{
 	padding-top: 30px;
-	margin-bottom: 450px;
+	margin-bottom: 500px;
 }
 .pricing-box-1 {
-	background-color: #C6DEFF;
+	background-color: #A0D8E0;
 	border-radius: 15px 50px;
 	opacity: 0.8;
     box-shadow: 0 1px 3px rgba(0,0,0,.2);
@@ -222,12 +227,12 @@ color: #001f3f;
 }
 #pricing-box-1-content li{
 	padding-bottom: 15px;
-	list-style-image: url(images/price_bullet_1.svg);
+	list-style-image: url(images/pb.svg);
 	font-size: 16px;
 }
 
 .pricing-box-2 {
-	background-color: #C6DEFF;
+	background-color: #A0D8E0;
 	border-radius: 15px 50px;
 	opacity: 0.8;
     box-shadow: 0 1px 3px rgba(0,0,0,.2);
@@ -238,7 +243,7 @@ color: #001f3f;
 }
 
 .pricing-box-3 {
-	background-color: #C6DEFF;
+	background-color: #A0D8E0;
 	border-radius: 15px 50px;
 	opacity: 0.8;
     box-shadow: 0 1px 3px rgba(0,0,0,.2);
@@ -248,7 +253,7 @@ color: #001f3f;
 }
 
 .button {
-    background-color: aliceblue;
+    background-color: #DFFFFF;
     border: none;
     border-radius: 12px;
     color: black;
@@ -265,8 +270,8 @@ color: #001f3f;
 }
 
 .button:hover {
-    background-color: #0E7CF4;
-    color: white;
+    background-color: #44B2C3;
+    color: floralwhite;
 }
 
 /*-----------------------------------Get Started ----------------------------------------*/
@@ -280,12 +285,11 @@ color: #001f3f;
 }
 
 .container {
-	padding-top: 50px;
 	text-align: center;
 }
 
-#footer{
-    background-color: #001f3f;
+.footer{
+	background-image: linear-gradient(-90deg, #10447F, #256774);
     color: floralwhite;
     padding-top: 30px;
     padding-left: 20px;
