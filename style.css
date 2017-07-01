@@ -104,8 +104,8 @@ header #logo {
 
 /*-----------------------------------Features ----------------------------------------*/
 .features{
-	/*background-color: aliceblue;*/
-	background-image: url("https://github.com/jbajaj12/QwkPass/blob/master/images/GoogleMap.jpg");
+	background-color: aliceblue;
+	/*background-image: url("https://github.com/jbajaj12/QwkPass/blob/master/images/GoogleMap.jpg");*/
 	padding-top: 30px;
 	padding-left: 20px;
 	padding-right: 50px;
