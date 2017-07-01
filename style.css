@@ -37,7 +37,10 @@ header {
     right: 0;
     left: 0;
     z-index: 99;
-    background-color:dodgerblue;
+    /*background-color: #001f3f;*/
+    background-image: linear-gradient(-90deg, #10447F, #256774);
+
+
     overflow: hidden;
     text-align: center;
     height: 115px;
@@ -101,7 +104,8 @@ header #logo {
 
 /*-----------------------------------Features ----------------------------------------*/
 .features{
-	background-color: aliceblue;
+	/*background-color: aliceblue;*/
+	background-image: url("https://github.com/jbajaj12/QwkPass/blob/master/images/GoogleMap.jpg");
 	padding-top: 30px;
 	padding-left: 20px;
 	padding-right: 50px;
@@ -118,7 +122,7 @@ header #logo {
 
 .body_imgs{
     float: center;
-    box-shadow: 0px 0px 55px 6px dodgerblue;
+    box-shadow: 0px 0px 55px 6px #001f3f;
 }
 
 #sub-features{
@@ -131,7 +135,7 @@ text-align: center;
 font-size: large;
 height: auto;
 margin-top: 40px;
-color: dodgerblue;
+color: #001f3f;
 }
 
 #features_body{
@@ -140,7 +144,7 @@ color: dodgerblue;
 }
 
 .features{
-	color: dodgerblue;
+	color: #001f3f;
 }
 
 
@@ -148,7 +152,7 @@ color: dodgerblue;
 
 /*-----------------------------------How it Work ----------------------------------------*/
 .how{
-	background-color: #C6DEFF;
+    background-image: linear-gradient(-90deg, #FFFFFF, #42B1C2);
 	padding-top: 50px;
 	padding-left: 20px;
 	padding-right: 50px;
@@ -188,7 +192,7 @@ color: dodgerblue;
 }
 
 .PricingHeader{
-	color: dodgerblue;
+	color: #001f3f;
 }
 .pricing-list{
 	padding-top: 30px;
@@ -267,7 +271,7 @@ color: dodgerblue;
 
 /*-----------------------------------Get Started ----------------------------------------*/
 .setup{
-	background-color: #C6DEFF;
+    background-image: linear-gradient(-90deg, #FFFFFF, #42B1C2);
 	padding-top: 30px;
 	padding-left: 20px;
 	padding-right: 50px;
@@ -280,14 +284,16 @@ color: dodgerblue;
 	text-align: center;
 }
 
-.footer{
-    background-color: dodgerblue;
+#footer{
+    background-color: #001f3f;
     color: floralwhite;
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 50px;
     padding-bottom: 50px; 
 }
+
+
 
 #foothead{
     display: inline-block;
