@@ -16,25 +16,29 @@
     .container .hero #features-intro {
 	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana, sans-serif;
 }
+
+
     </style>
 </head>
 <body>
   
 
-  
-<!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation">-->
-<div id="nav">
+<!-----------------------------------Navigation Bar ---------------------------------------->
+<header>
+<!--<div id="nav">-->
     <div id=logo><a href="#"><img src="images/ogo.png"></a></div>
-		  <div id="nav_text">
+		 <nav>
+		  <!--<div id="nav_text">-->
 				<ul>
 					<li><a class="smoothScroll" href="#features">Features</a></li>
-					<li><a class="smoothScroll" href="#how">How it works?</a></li>
+					<li><a class="smoothScroll" href="#how">How it works</a></li>
 					<li><a class="smoothScroll" href="#pricing">Pricing</a></li>
-					<li><a class="smoothScroll" href="#setup">Account Setup</a></li>
+					<li><a class="smoothScroll" href="#setup">Get Started</a></li>
 				</ul>
-			  </div>
-</div>
-<!--</nav> -->
+			  <!--</div>-->
+			  </nav>
+<!--</div>-->
+</header> 
 
 <div class="container">
 <div class="hero">
@@ -42,33 +46,35 @@
       With QwkPass, you will be able to navigate your way through any public transit system without confusing payments, exhaustive schedule planning between multiple transit types and with the addition of our QwkPass tags, public transportation more efficient and pain free allowing the user to access these services faster than ever before without the fear of missing that train 
       </div>
 </div>
+
+
+<!-----------------------------------Features ---------------------------------------->
 <div class="features" id="features">
 <h2>Features</h2>
     <h3 id="sub-features">Improving Transit Travel Efficiently</h3>
     <img class="body_imgs" src="images/Feature1.png"></img>
   <table id="features-bullets">
     <tr>
-      <td style=" width: 25%;">Easy mobile app to manage subscriptions, account balance, and allow user to enter any metro system with just your phone or QwkPass tag</td>
-      <td style=" width: 25%;">QwkPass has a real-time trip planning feature to automatically create an easy to follow travel guide</td>
-      <td style=" width: 25%;">QwkPass Tags allow anyone to fastrack their boarding times effortlessly and conveniently</td>
-      <td style=" width: 25%;">Expertly designed terminals at metro stations to accurately read user data through RFID technology and communication with back-end server in order to authorize payment</td>
+      <td style=" width: 25%;">
+        <h4>Mobile App</h4>
+         <p id="features_body">Easy mobile app to manage subscriptions, account balance, and allow user to enter any metro system with just your phone or QwkPass tag</p></td>
+      <td style=" width: 25%;">
+        <h4>Trip Planning</h4>
+        <p id="features_body">QwkPass has a real-time trip planning feature to automatically create an easy to follow travel guide in any language that you require</p></td>
+      <td style=" width: 25%;">
+        <h4>QwkPass Tags</h4>
+        <p id="features_body">QwkPass Tags allow anyone to fastrack their boarding times effortlessly and conveniently without wasting countless time paying for access</p></td>
+      <td style=" width: 25%;">
+        <h4>QwkPass Terminal</h4>
+        <p id="features_body">Expertly designed terminals at stations to fastrack the process of accessing train stations with the partnered use of our QwkPass tags </p></td>
     </tr>
   </table>
-    
-    
-    
-    <p>
-    
-    <!--<ul id="features-bullets">
-      <li>Easy mobile app to manage subscriptions, account balance, and allow user to enter any metro system with just your phone or QwkPass tag</li>
-      <li>QwkPass has a real-time trip planning feature to automatically create an easy to follow travel guide </li>
-      <li>QwkPass Tags allow anyone to fastrack their boarding times effortlessly and conveniently </li>
-      <li>Expertly designed terminals at metro stations to accurately read user data through RFID technology and communication with back-end server in order to authorize payment </li>
-    </ul>-->
-    </p>
 </div>
+
+
+<!-----------------------------------How it works ---------------------------------------->
 <div class="how" id="how">
-<h2>How it works?</h2>
+<h2>How it works</h2>
     <h3>Easy to use and made for the traveler</h3>
     <p><img src="images/Step1.png" id="step1img" align="top"></p>
     <p>&nbsp;</p>
@@ -90,8 +96,10 @@
 </table>
 </div>
 </div>
+
+<!-----------------------------------Pricing ---------------------------------------->
 <div class="pricing" id="pricing">
-  <h2>Pricing</h2>
+  <h2 id="PricingHeader">Pricing</h2>
     <h3>Various payment plans for all kinds of travelers</h3>
 <p>The QwkPass tag will be available to all users who wish to get paperless at the terminals and enjoy the benefits of speeding through the terminals to board their transit vehicle. 
 </p>
@@ -138,8 +146,10 @@
  </div>
  </div>
  </div>
+ 
+<!-----------------------------------Get Started ---------------------------------------->
 <div class="setup" id="setup">
-<h2>Account Setup</h2>
+<h2>Get Started</h2>
     <h3>Setup your QwkPass today for fluid transactions</h3>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla, purus in porttitor pellentesque, erat arcu tincidunt diam, dapibus faucibus leo mauris at sapien. In porttitor vehicula sodales. Vivamus massa neque, facilisis eu felis ut, aliquet convallis nisi. Nam elementum tellus vitae gravida fermentum. Nullam et imperdiet leo. Integer ut euismod lorem, in placerat lacus. Curabitur bibendum arcu ut feugiat commodo. Suspendisse ut mi vel orci ullamcorper tincidunt. Nam vitae fringilla nibh. Nullam hendrerit blandit velit eu hendrerit.    
@@ -212,8 +222,24 @@ $(function() {
 <script src="/node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
 <!-- <script src="/js/scroll.js"></script> -->
 
-<script src="/js/navshrink.js"></script>
 <script src="/jquery-1.11.3.min.js"></script>
-
+<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>    
 </body>
 </html>

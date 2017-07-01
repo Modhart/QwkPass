@@ -4,7 +4,7 @@
     src: url(“/QwkPass/fonts/AvenirNext.otf”) format(“opentype”);
 }
 
-
+/*-----------------------------------General Page ----------------------------------------*/
 body {
 	font-family: Helvetica, sans-serif;
 	margin:0;
@@ -13,15 +13,25 @@ body {
 	font-weight: 400;
 }
 
-#nav{
-  background-color:dodgerblue;
-  height: 15px;
-   /*Animation*/
-   -webkit-transition: all 0.4s ease;
-   transition: all 0.4s ease;
+/*-----------------------------------Navigation----------------------------------------*/
+.smoothScroll {
+  text-decoration: none;
+  font-family: Segoe UI;
 }
 
-#nav {
+header.smaller #logo{
+   display: none !important;
+}
+
+header.smaller {
+	height:50px;
+	font-size: smaller;
+}
+
+header.smaller a{
+line-height: 40px;
+}
+header {
     position: fixed;
     top: 0;
     right: 0;
@@ -30,30 +40,52 @@ body {
     background-color:dodgerblue;
     overflow: hidden;
     text-align: center;
-    height: 110px;
+    height: 115px;
+    width:100%;
+    
+    
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
 }
 
-#nav shrink {
-  height: 15px;
-}
-
-#nav a {
+header a {
 	font-family: 'Avenir', serif;
 	color: floralwhite;
 	padding-right: 100px;
 	text-decoration: none;
 	align-self: center;
+	
+	 -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
-#nav_text{
+header {
 	font-weight: bold;   
     align-items: center;
     font-family: 'Avenir', serif;
 }
 
 
-#nav li {
+header li {
     display:inline;
+}
+
+header #logo {
+    max-width: 100%;
+    display: inline-block;
+    float: center;
+    padding-left: 50px;
     
+        -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .hero {
@@ -67,12 +99,13 @@ body {
 	padding-bottom: 575px;
 }
 
+/*-----------------------------------Features ----------------------------------------*/
 .features{
 	background-color: aliceblue;
 	padding-top: 30px;
 	padding-left: 20px;
 	padding-right: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 70px;
 }
 #features-intro{
 	text-align: center;
@@ -88,19 +121,32 @@ body {
     box-shadow: 0px 0px 55px 6px dodgerblue;
 }
 
+#sub-features{
+	padding-bottom: 30px;
+	color:black;
+	font-style: oblique
+}
 #features-bullets{
 text-align: center;
-font-size: smaller;
-height:auto;
-margin-top: 30px;
-color: #888B8D;
+font-size: large;
+height: auto;
+margin-top: 40px;
+color: dodgerblue;
 }
 
-.smoothScroll {
-  text-decoration: none;
-  font-family: Segoe UI;
+#features_body{
+	font-size: medium;
+	color: black;
 }
 
+.features{
+	color: dodgerblue;
+}
+
+
+
+
+/*-----------------------------------How it Work ----------------------------------------*/
 .how{
 	background-color: #C6DEFF;
 	padding-top: 50px;
@@ -130,6 +176,8 @@ color: #888B8D;
 	float: left;
 	padding-left: 10%;
 }
+
+/*-----------------------------------Pricing ----------------------------------------*/
 .pricing{
 	background-color: aliceblue;
 	padding-top: 30px;
@@ -139,6 +187,9 @@ color: #888B8D;
 	text-align: center;
 }
 
+.PricingHeader{
+	color: dodgerblue;
+}
 .pricing-list{
 	padding-top: 30px;
 	margin-bottom: 450px;
@@ -214,6 +265,7 @@ color: #888B8D;
     color: white;
 }
 
+/*-----------------------------------Get Started ----------------------------------------*/
 .setup{
 	background-color: #C6DEFF;
 	padding-top: 30px;
@@ -241,12 +293,7 @@ color: #888B8D;
     display: inline-block;
     padding-right: 40px;
 }
-#logo {
-    max-width: 100%;
-    display: inline-block;
-    float: center;
-    padding-left: 50px;
-}
+
 
 #fsteps {
     color: #888B8D;
