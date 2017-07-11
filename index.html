@@ -21,8 +21,6 @@
     </style>
 </head>
 <body>
-  
-
 <!-----------------------------------Navigation Bar ---------------------------------------->
 <header>
 <!--<div id="nav">-->
@@ -153,13 +151,12 @@
 <!-----------------------------------Get Started ---------------------------------------->
 <div class="setup" id="setup">
 <h2>Get Started</h2>
-    <h3>Setup your QwkPass today for fluid transactions</h3>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla, purus in porttitor pellentesque, erat arcu tincidunt diam, dapibus faucibus leo mauris at sapien. In porttitor vehicula sodales. Vivamus massa neque, facilisis eu felis ut, aliquet convallis nisi. Nam elementum tellus vitae gravida fermentum. Nullam et imperdiet leo. Integer ut euismod lorem, in placerat lacus. Curabitur bibendum arcu ut feugiat commodo. Suspendisse ut mi vel orci ullamcorper tincidunt. Nam vitae fringilla nibh. Nullam hendrerit blandit velit eu hendrerit.    
-</p> 
-    <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla, purus in porttitor pellentesque, erat arcu tincidunt diam, dapibus faucibus leo mauris at sapien. In porttitor vehicula sodales. Vivamus massa neque, facilisis eu felis ut, aliquet convallis nisi. Nam elementum tellus vitae gravida fermentum. Nullam et imperdiet leo. Integer ut euismod lorem, in placerat lacus. Curabitur bibendum arcu ut feugiat commodo. Suspendisse ut mi vel orci ullamcorper tincidunt. Nam vitae fringilla nibh. Nullam hendrerit blandit velit eu hendrerit.    
-</p> 
+  <input id="textemail" type="email" placeholder="Email"/>
+  <input id="textpassword" type="password" placeholder="Password"/>
+  <button id="btn_login" class="button">Log in</button>
+  <button id="btn_signup" class="button">Sign Up</button>
+  <button id="btn_logout" class="button hide">Log out</button>
+  
 </div>
 </div>
 <div class="footer">
@@ -178,6 +175,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla, purus
 </div> 
 </body>
 </html>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-database.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBIzEsqTlE5GvUHS1ZBxR8BNDnwGYzfxk4",
+    authDomain: "qwkpass.firebaseapp.com",
+    databaseURL: "https://qwkpass.firebaseio.com",
+    projectId: "qwkpass",
+    storageBucket: "qwkpass.appspot.com",
+    messagingSenderId: "508115255068"
+  };
+  firebase.initializeApp(config);
+</script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -201,20 +217,6 @@ $(function() {
 // Change the speed to whatever you want
 // Personally i think 1000 is too much
 // Try 800 or below, it seems not too much but it will make a difference
-</script>
-
-<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBIzEsqTlE5GvUHS1ZBxR8BNDnwGYzfxk4",
-    authDomain: "qwkpass.firebaseapp.com",
-    databaseURL: "https://qwkpass.firebaseio.com",
-    projectId: "qwkpass",
-    storageBucket: "qwkpass.appspot.com",
-    messagingSenderId: "508115255068"
-  };
-  firebase.initializeApp(config);
 </script>
 
 <!-- Navigation Bar Sources -->

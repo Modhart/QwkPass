@@ -26,7 +26,7 @@ header.smaller #logo{
 header.smaller {
 	height:50px;
 	font-size: smaller;
-	opacity: 1;
+	opacity: .9;
 }
 
 header.smaller a{
@@ -42,10 +42,10 @@ header {
     /*background-color: #001f3f;*/
     background-image: linear-gradient(-90deg, #10447F, #256774);
 	
-
+	height: 875px;
     overflow: hidden;
     text-align: center;
-    height: 650px;
+    height: 0;
     width:100%;
     
     
@@ -90,7 +90,7 @@ header #logo {
     color: floralwhite;
     /*padding-left: 50px;*/
     
-        -webkit-transition: all 1.0s;
+    -webkit-transition: all 1.0s;
     -moz-transition: all 1.0s;
     -ms-transition: all 1.0s;
     -o-transition: all 1.0s;
@@ -118,13 +118,12 @@ header #logo {
 	padding-bottom: 70px;
 }
 #features-intro{
-		font-family: "Avenir", serif;
-
+	font-family: "Avenir", serif;
 	text-align: center;
 	margin-right: 350px;
 	margin-left: 350px;
 	color: #FFFFFF;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .body_imgs{
