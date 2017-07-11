@@ -24,16 +24,19 @@ header.smaller #logo{
 }
 
 header.smaller {
+    font-family: "Avenir", serif;
 	height:50px;
 	font-size: smaller;
 	opacity: .9;
 }
 
 header.smaller a{
+font-family: "Avenir", serif;
 line-height: 30px;
 color:floralwhite;
 }
 header {
+    font-family: "Avenir", serif;
     position: fixed;
     top: 0;
     right: 0;
@@ -61,7 +64,6 @@ header a {
 	color: transparent;
 	padding-right: 100px;
 	text-decoration: none;
-	align-self: center;
 	
 	 -webkit-transition: all 1.0s;
     -moz-transition: all 1.0s;
@@ -72,7 +74,7 @@ header a {
 header {
 	font-weight: bold;   
     align-items: center;
-    font-family: Avenir;
+    font-family: "Avenir", serif;
     opacity: 0.5;
 }
 
