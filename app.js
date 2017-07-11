@@ -1,7 +1,7 @@
 (function() {
     //Initialize Firebase
 
-    const config = {
+    var config = {
         apiKey: "AIzaSyBIzEsqTlE5GvUHS1ZBxR8BNDnwGYzfxk4",
         authDomain: "qwkpass.firebaseapp.com",
         databaseURL: "https://qwkpass.firebaseio.com",
