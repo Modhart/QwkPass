@@ -1,6 +1,5 @@
 (function() {
     //Initialize Firebase
-
     var config = {
         apiKey: "AIzaSyBIzEsqTlE5GvUHS1ZBxR8BNDnwGYzfxk4",
         authDomain: "qwkpass.firebaseapp.com",
@@ -11,6 +10,8 @@
     };
     firebase.initializeApp(config);
 
+
+    
     //Get elements
     const textemail = document.getElementById('textemail');
     const textpassword = document.getElementById('textpassword');
