@@ -1,4 +1,17 @@
 (function() {
+    //Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBIzEsqTlE5GvUHS1ZBxR8BNDnwGYzfxk4",
+        authDomain: "qwkpass.firebaseapp.com",
+        databaseURL: "https://qwkpass.firebaseio.com",
+        projectId: "qwkpass",
+        storageBucket: "qwkpass.appspot.com",
+        messagingSenderId: "508115255068"
+    };
+    firebase.initializeApp(config);
+
+
+    
     //Get elements
     const textemail = document.getElementById('textemail');
     const textpassword = document.getElementById('textpassword');
