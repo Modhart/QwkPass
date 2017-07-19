@@ -96,7 +96,7 @@ $('#data').keypress(function (e) {
     if (e.keyCode == 13) {
         var data = $('#data').val();
         console.log(myUser.id);
-        var myRef = new Firebase("https://xxx.firebaseio.com/users/" + myUser.id);
+        var myRef = new Firebase("https://qwkpass.firebaseio.com/users/" + myUser.id);
         myRef.push({
             data: data
         });
