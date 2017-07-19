@@ -1,4 +1,18 @@
-var ref = new Firebase("https://qwkpass.firebaseio.com");
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-database.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+var config = {
+    apiKey: "AIzaSyBIzEsqTlE5GvUHS1ZBxR8BNDnwGYzfxk4",
+    authDomain: "qwkpass.firebaseapp.com",
+    databaseURL: "https://qwkpass.firebaseio.com",
+    projectId: "qwkpass",
+    storageBucket: "qwkpass.appspot.com",
+    messagingSenderId: "508115255068"
+  };
+firebase.initializeApp(config);
 
 // global user (is this a good thing?)
 myUser = -1;
