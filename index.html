@@ -148,11 +148,36 @@
 <!-----------------------------------Get Started ---------------------------------------->
 <div class="setup" id="setup">
 <h2>Get Started</h2>
-  <input id="textemail" type="email" placeholder="Email"/>
-  <input id="textpassword" type="password" placeholder="Password"/>
-  <button id="btn_login" class="button">Log in</button>
-  <button id="btn_signup" class="button">Sign Up</button>
-  <button id="btn_logout" class="button hide">Log out</button>
+<div id="dialog-register" title="Register new user">
+    <form>
+        <fieldset>
+            <label for="name">Email</label>
+            <input type="text" name="email" id="register-email" class="text ui-widget-content ui-corner-all" />
+            <label for="password">Password</label>
+            <input type="password" name="password" id="register-password" value="" class="text ui-widget-content ui-corner-all" />
+        </fieldset>
+    </form>
+</div>
+<div id="dialog-login" title="Login user">
+    <form>
+        <fieldset>
+            <label for="name">Email</label>
+            <input type="text" name="email" id="login-email" class="text ui-widget-content ui-corner-all" />
+            <label for="password">Password</label>
+            <input type="password" name="password" id="login-password" value="" class="text ui-widget-content ui-corner-all" />
+        </fieldset>
+    </form>
+</div>
+<button id="opener-register">Register</button>
+<button id="opener-login">Login</button>
+<button id="opener-logout">Logout</button>
+<br />
+<input id="data" />
+  <!--<input id="textemail" type="email" placeholder="Email"/>-->
+  <!--<input id="textpassword" type="password" placeholder="Password"/>-->
+  <!--<button id="btn_login" class="button">Log in</button>-->
+  <!--<button id="btn_signup" class="button">Sign Up</button>-->
+  <!--<button id="btn_logout" class="button hide">Log out</button>-->
   
      <script src="app.js"></script>
 </div>
