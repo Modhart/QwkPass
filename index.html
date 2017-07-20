@@ -192,14 +192,12 @@
 <!--  dbRef.on('value', snap => Test.innerText = snap.val());-->
 <!--</script>-->
 
-  <input id="txtemail" type="email" placeholder="Email"/>
-  <input id="txtpassword" type="password" placeholder="Password"/>
-  <button id="btnLogin" class="button">Log in</button>
-  <button id="btnSignUp" class="button">Sign Up</button>
-  <button id="btnLogout" class="button hide">Log out</button>
+  <input label="txtemail" id="txtemail" type="text" value="{{email::input}}" placeholder="Email"/>
+  <input label="txtpassword" id="txtpassword" type="password" value="{{password::input}}" placeholder="Password"/>
+  <button on-click="signIn" id="btnLogin" class="button">Log in</button>
+  <button on-click="register" id="btnSignUp" class="button">Sign Up</button>
+  <button on-click="signOut" id="btnLogout" class="button hide">Log out</button>
   </div>
-  
-  <script src="/js/app.js"></script>
 </div>
 
 
@@ -225,26 +223,43 @@
 <script>
 $(function() {
  
-//Get elements
-window.onload = function(){
-const txtEmail = document.getElementById('txtEmail');
-const txtPassword = document.getElementById('txtPassword');
-const btnLogin = document.getElementById('btnLogin');
-const btnSignUp = document.getElementById('btnSignUp');
-const btnLogout = document.getElementById('btnLogout');
+ var app = document.querySelector('#setup');
+ 
+ setup.signIn = function() {
+   var email = setup.email;
+   var password = setup.password;
+   
+   if(!email || !password){
+     return console.log('email and password required');
+   }
+   
+   firebase.auth().signInWithEmailAndPassword(email, password)
+    .catch(function(error) {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      console.log('signIn error', error);
+    });
+ }
+// //Get elements
+// window.onload = function(){
+// const txtEmail = document.getElementById('txtEmail');
+// const txtPassword = document.getElementById('txtPassword');
+// const btnLogin = document.getElementById('btnLogin');
+// const btnSignUp = document.getElementById('btnSignUp');
+// const btnLogout = document.getElementById('btnLogout');
 
 
-//Add Login event
-btnLogin.addEventListener('click', e => { 
-    //Get email and pass
-    const email = txtEmail.value;
-    const pass = txtPassword.value;
-    firebase.auth();
-    //Sign in
-    const promise = auth.signInWithEmailAndPassword(email, pass);
-    promise.catch(e => console.log(e.message));
-});
-};
+// //Add Login event
+// btnLogin.addEventListener('click', e => { 
+//     //Get email and pass
+//     const email = txtEmail.value;
+//     const pass = txtPassword.value;
+//     firebase.auth();
+//     //Sign in
+//     const promise = auth.signInWithEmailAndPassword(email, pass);
+//     promise.catch(e => console.log(e.message));
+// });
+// };
 
 });
 </script>
