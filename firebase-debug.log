@@ -1,0 +1,28 @@
+[debug] [2017-07-20T05:17:51.520Z] ----------------------------------------------------------------------
+[debug] [2017-07-20T05:17:51.524Z] Command:      /home/ubuntu/.nvm/versions/node/v4.7.3/bin/node /home/ubuntu/.nvm/versions/node/v4.7.3/bin/firebase serve
+[debug] [2017-07-20T05:17:51.524Z] CLI Version:  3.9.1
+[debug] [2017-07-20T05:17:51.524Z] Platform:     linux
+[debug] [2017-07-20T05:17:51.524Z] Node Version: v4.7.3
+[debug] [2017-07-20T05:17:51.525Z] Time:         Thu Jul 20 2017 05:17:51 GMT+0000 (UTC)
+[debug] [2017-07-20T05:17:51.525Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-07-20T05:17:51.537Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-20T05:17:51.538Z] > authorizing via signed-in user
+[debug] [2017-07-20T05:17:51.540Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/qwkpass  
+ Thu Jul 20 2017 05:17:51 GMT+0000 (UTC)
+[debug] [2017-07-20T05:17:51.802Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-20T05:17:51.803Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/qwkpass/tokens  
+ Thu Jul 20 2017 05:17:51 GMT+0000 (UTC)
+[debug] [2017-07-20T05:17:52.011Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/ubuntu/workspace'...
+[info] 
+[debug] [2017-07-20T05:17:52.014Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/qwkpass  
+ Thu Jul 20 2017 05:17:52 GMT+0000 (UTC)
+[debug] [2017-07-20T05:17:52.173Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-20T05:17:52.174Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/508115255068/clients/_:getWebAppConfig  
+ Thu Jul 20 2017 05:17:52 GMT+0000 (UTC)
+[debug] [2017-07-20T05:17:52.446Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-20T05:17:52.464Z] TypeError: Cannot read property 'public' of undefined
+[error] 
+[error] Error: An unexpected error has occurred.
