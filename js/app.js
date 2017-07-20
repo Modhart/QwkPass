@@ -17,11 +17,12 @@ window.onload = function(){
             txtEmail.onclick = function() {
                 alert('Login is clicked!');
             }
-        };
 const txtPassword = document.getElementById('txtPassword');
 const btnLogin = document.getElementById('btnLogin');
 const btnSignUp = document.getElementById('btnSignUp');
 const btnLogout = document.getElementById('btnLogout');
+
+
 
 //Add Login event
 btnLogin.addEventListener('click', e => { 
@@ -33,6 +34,8 @@ btnLogin.addEventListener('click', e => {
     const promise = auth.signInWithEmailAndPassword(email, pass);
     promise.catch(e => console.log(e.message));
 });
+
+};
 
 // btnSignUp.addEventListener('click', e => {
 //     //Get email and pass
