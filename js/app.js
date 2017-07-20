@@ -11,7 +11,13 @@
 (function(){
  
 //Get elements
-const txtEmail = document.getElementById('txtEmail');
+window.onload = function(){
+          const txtEmail = document.getElementById('txtEmail');
+
+            txtEmail.onclick = function() {
+                alert('Login is clicked!');
+            }
+        };
 const txtPassword = document.getElementById('txtPassword');
 const btnLogin = document.getElementById('btnLogin');
 const btnSignUp = document.getElementById('btnSignUp');
