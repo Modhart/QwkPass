@@ -1,19 +1,14 @@
-<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-database.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+// var config = {
+//     apiKey: "AIzaSyBIzEsqTlE5GvUHS1ZBxR8BNDnwGYzfxk4",
+//     authDomain: "qwkpass.firebaseapp.com",
+//     databaseURL: "https://qwkpass.firebaseio.com",
+//     projectId: "qwkpass",
+//     storageBucket: "qwkpass.appspot.com",
+//     messagingSenderId: "508115255068"
+//   };
+// firebase.initializeApp(config);
 
-var config = {
-    apiKey: "AIzaSyBIzEsqTlE5GvUHS1ZBxR8BNDnwGYzfxk4",
-    authDomain: "qwkpass.firebaseapp.com",
-    databaseURL: "https://qwkpass.firebaseio.com",
-    projectId: "qwkpass",
-    storageBucket: "qwkpass.appspot.com",
-    messagingSenderId: "508115255068"
-  };
-firebase.initializeApp(config);
-
+ 
 //Get elements
 const txtEmail = document.getElementById('txtEmail');
 const txtPassword = document.getElementById('txtPassword');
@@ -41,6 +36,10 @@ btnSignUp.addEventListener('click', e => {
     //Sign in
     const promise = auth.createUserWithEmailAndPassword(email, pass);
     promise.catch(e => console.log(e.message));
+});
+
+btnLogout.addEventListener('click', e => {
+    firebase.auth().signOut();
 });
 
 // Add a realtime listener
