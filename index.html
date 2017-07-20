@@ -222,9 +222,42 @@
 </html>
 
 
+<script>
+$(function() {
+ 
+//Get elements
+window.onload = function(){
+          const txtEmail = document.getElementById('txtEmail');
+
+            txtEmail.onclick = function() {
+                alert('Login is clicked!');
+            }
+const txtPassword = document.getElementById('txtPassword');
+const btnLogin = document.getElementById('btnLogin');
+const btnSignUp = document.getElementById('btnSignUp');
+const btnLogout = document.getElementById('btnLogout');
+
+
+
+//Add Login event
+btnLogin.addEventListener('click', e => { 
+    //Get email and pass
+    const email = txtEmail.value;
+    const pass = txtPassword.value;
+    firebase.auth();
+    //Sign in
+    const promise = auth.signInWithEmailAndPassword(email, pass);
+    promise.catch(e => console.log(e.message));
+});
+};
+
+});
+</script>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
 
 <script>
 $(function() {
