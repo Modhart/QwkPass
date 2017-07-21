@@ -6,7 +6,7 @@
 
 body {
 
-    background-image: url("https://raw.githubusercontent.com/jbajaj12/QwkPass/master/images/station_New_York_City_train_stations_Grand_Central_Station_2560x1440.jpg");
+    background-image: url("https://raw.githubusercontent.com/jbajaj12/QwkPass/master/images/account_background.png");
     /*background-position: center;*/
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,6 +41,8 @@ body {
     position: absolute;
     text-align: center;
     top: 50%;
+    width: 25%;
+    float: center;
 }
 
 .button:hover {
