@@ -1,26 +1,46 @@
-@font-face 
-{
-    font-family: Avenir;
-    src: url(“/QwkPass/fonts/AvenirNext.otf”) format(“opentype”);
-}
+/*@font-face */
+/*{*/
+/*    font-family: Avenir;*/
+/*    src: url(“/QwkPass/fonts/AvenirNext.otf”) format(“opentype”);*/
+/*}*/
+
 body {
-    background-image: "/images/station_New_York_City_train_stations_Grand_Central_Station_2560x1440.jpg"
+
+    background-image: url("https://raw.githubusercontent.com/jbajaj12/QwkPass/master/images/station_New_York_City_train_stations_Grand_Central_Station_2560x1440.jpg");
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    diplay:block;
+    font-family: "Avenir", serif;
+    font-weight: normal;
+    color: white;
+    font-size:  40px;
+    left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
 }
 .button {
     background-color: #DFFFFF;
     border: none;
     border-radius: 12px;
     color: black;
-    padding: 15px 32px;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    margin-bottom:20px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; 
     cursor: pointer;
+    left: 0;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
 }
 
 .button:hover {
@@ -28,16 +48,7 @@ body {
     color: floralwhite;
 }
 
-/*-----------------------------------Get Started ----------------------------------------*/
 .setup{
-    background-image: linear-gradient(-90deg, #FFFFFF, #42B1C2);
-	padding-top: 30px;
-	padding-left: 20px;
-	padding-right: 50px;
-	padding-bottom: 150px;
 	text-align: center;
 }
 
-.container {
-	text-align: center;
-}
