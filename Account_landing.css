@@ -12,19 +12,27 @@ body {
     background-size: cover;
 }
 
-.header {
-    diplay:block;
-    font-family: "Avenir", serif;
-    font-weight: normal;
-    color: white;
-    font-size:  40px;
-    left: 0;
-    line-height: 200px;
+.floatbox{
+    background: #102429;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.03);
+    color: #999;
+    font-size: 13px;
+    line-height: 1.4em;
+    width: 480px;
+    left: 42%;
     margin-top: -100px;
     position: absolute;
     text-align: center;
-    top: 50%;
-    width: 100%;
+    top: 30%;
+    opacity: 0.5;
+}
+
+.header {
+    diplay: block;
+    font-family: "Avenir", serif;
+    font-weight: normal;
+    color: white;
+    font-size: 40px;
 }
 .button {
     background-color: #DFFFFF;
