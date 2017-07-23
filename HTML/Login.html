@@ -7,7 +7,7 @@
     <title>Account_Portal</title>
     <meta name="account_portal" content="QwkPass_accounts">
     <meta name="author" content="JDB">
-        <link rel="stylesheet" type="text/css" href="Account_landing.css" />
+        <link rel="stylesheet" type="text/css" href="/CSS/Login.css" />
         <style type="text/css">
 /*               .container .hero #features-intro {*/
 /*	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;*/
@@ -40,15 +40,22 @@
 </head>    
 
 <body>
+    <div class="Logo">
+       <a href="/HTML/Login.html"><h1>QwkPass</h1></a>
+    </div>
     <div class="setup" id="setup">
     <div class="floatbox">
-    <h1 class="header">Get Started</h1>
-  
+        <center>
+    <h1 class="header">Account Login</h1>
+    <p id="SignUp">Don't have an account? <a href="/HTML/Registration.html">SignUp</a></p>
+  <ul>
   <input label="txtemail" id="txtemail" type="text" value="Email" placeholder="Email"/>
   <input label="txtpassword" id="txtpassword" type="password" value="{{password::input}}" placeholder="Password"/>
+  </ul>
   <button on-click="signIn" id="btnLogin" class="button">Log in</button>
-  <button on-click="register" id="btnSignUp" class="button">Sign Up</button>
-  <button on-click="signOut" id="btnLogout" class="button hide">Log out</button>
+  <!--<button on-click="register" id="btnSignUp" class="button">Sign Up</button>-->
+  <!--<button on-click="signOut" id="btnLogout" class="button hide">Log out</button>-->
+  </center>
   </div>
   </div>
 </div>

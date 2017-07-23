@@ -7,7 +7,7 @@
   <title>QwkPass</title>
   <meta name="description" content="QwkPass">
   <meta name="author" content="JBD">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="/CSS/Home.css" />
     <style type="text/css">
     .container .hero #features-intro {
 	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
@@ -42,21 +42,15 @@
 <body>
 <!-----------------------------------Navigation Bar ---------------------------------------->
 <header>
-<!--<div id="nav">-->
-
 		 <nav>
-		  <!--<div id="nav_text">-->
-				<ul >
+				<ul>
 					<li><a class="smoothScroll" href="#features">Features</a></li>
 					<li><a class="smoothScroll" href="#how">How it works</a></li>
 					<li><a class="smoothScroll" href="#pricing">Pricing</a></li>
 					<li><a class="smoothScroll" href="#setup">Get Started</a></li>
 				</ul>
-			  <!--</div>-->
 			  </nav>
-<!--</div>-->
 </header> 
-
 <div class="container">
     
 <!-----------------------------------Hero ---------------------------------------->
@@ -165,7 +159,7 @@
  
 <!-----------------------------------Get Started ---------------------------------------->
 <div class="setup" id="setup">
-<a href="Account_landing.html"><h2>Get Started</h2></a>
+<a href="/HTML/Login.html"><h2>Get Started</h2></a>
 
   <input label="txtemail" id="txtemail" type="text" value="Email" placeholder="Email"/>
   <input label="txtpassword" id="txtpassword" type="password" value="{{password::input}}" placeholder="Password"/>
@@ -235,49 +229,7 @@ $(document).ready(function() {
   });
 });
 
-// $(function() {
- 
-// var app = document.querySelector('#setup');
- 
 
-
-// setup.btnLogin = function() {
-//   var email = setup.email;
-//   var password = setup.password;
-   
-//   if(!email || !password){
-//     return console.log('email and password required');
-//   }
-   
-//   firebase.auth().signInWithEmailAndPassword(email, password)
-//     .catch(function(error) {
-//       var errorCode = error.code;
-//       var errorMessage = error.message;
-//       console.log('signIn error', error);
-//     });
-// }
-// // //Get elements
-// // window.onload = function(){
-// // const txtEmail = document.getElementById('txtEmail');
-// // const txtPassword = document.getElementById('txtPassword');
-// // const btnLogin = document.getElementById('btnLogin');
-// // const btnSignUp = document.getElementById('btnSignUp');
-// // const btnLogout = document.getElementById('btnLogout');
-
-
-// // //Add Login event
-// // btnLogin.addEventListener('click', e => { 
-// //     //Get email and pass
-// //     const email = txtEmail.value;
-// //     const pass = txtPassword.value;
-// //     firebase.auth();
-// //     //Sign in
-// //     const promise = auth.signInWithEmailAndPassword(email, pass);
-// //     promise.catch(e => console.log(e.message));
-// // });
-// // };
-
-// });
 </script>
 
 

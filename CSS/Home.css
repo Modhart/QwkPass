@@ -108,16 +108,18 @@ header #logo {
     position: relative;	
 	padding-top: 300px;
 	padding-bottom: 575px;
+	font-size-adjust: 50px;
 }
 
 /*-----------------------------------Features ----------------------------------------*/
 .features{
 	background-color: #DFFFFF;
 	/*background-image: url("https://github.com/jbajaj12/QwkPass/blob/master/images/GoogleMap.jpg");*/
-	padding-top: 30px;
+	padding-top: 50px;
 	padding-left: 20px;
 	padding-right: 50px;
-	padding-bottom: 70px;
+	padding-bottom: 150px;
+	height: 875px;
 }
 #features-intro{
 	font-family: "Avenir", serif;
@@ -165,6 +167,7 @@ color: #001f3f;
 	padding-left: 20px;
 	padding-right: 50px;
 	padding-bottom: 150px;
+	height: 875px;
 }
 
 #how_content{
@@ -192,11 +195,12 @@ color: #001f3f;
 /*-----------------------------------Pricing ----------------------------------------*/
 .pricing{
 	background-color: #DFFFFF;
-	padding-top: 30px;
+	padding-top: 50px;
 	padding-left: 20px;
 	padding-right: 50px;
-	padding-bottom: 20px;
+	padding-bottom: 150px;
 	text-align: center;
+	height: 875px;
 }
 
 .PricingHeader{
@@ -279,12 +283,17 @@ color: #001f3f;
 
 /*-----------------------------------Get Started ----------------------------------------*/
 .setup{
-    background-image: linear-gradient(-90deg, #FFFFFF, #42B1C2);
-	padding-top: 30px;
+    /*background-image: linear-gradient(-90deg, #FFFFFF, #42B1C2);*/
+    background-image: url("https://raw.githubusercontent.com/jbajaj12/QwkPass/master/images/GoogleMap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+	padding-top: 50px;
 	padding-left: 20px;
 	padding-right: 50px;
 	padding-bottom: 150px;
 	text-align: center;
+	height: 875px;
 }
 
 .container {

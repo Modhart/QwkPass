@@ -6,43 +6,47 @@
 
 body {
 
-    background-image: url("https://raw.githubusercontent.com/jbajaj12/QwkPass/master/images/account_background.png");
+    /*background-image: url("https://raw.githubusercontent.com/jbajaj12/QwkPass/master/images/account_background.png");*/
     /*background-position: center;*/
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgb(16, 115, 178)
 }
 
 .floatbox{
-    background: #102429;
+    /*background: #102429;*/
+    background: white;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.03);
     color: #999;
     font-size: 13px;
     line-height: 1.4em;
     width: 480px;
-    left: 42%;
+    left: 37.5%;
     margin-top: -100px;
     position: absolute;
     text-align: center;
-    top: 30%;
-    opacity: 0.5;
+    top: 40%;
+    border-radius: 12px;
 }
+
 
 .header {
     diplay: block;
     font-family: "Avenir", serif;
     font-weight: normal;
-    color: white;
+    color: dodgerblue;
     font-size: 40px;
 }
+
 .button {
-    background-color: #DFFFFF;
+    display: inline-block;
+    background-color: rgb(16, 115, 178);
     border: none;
     border-radius: 12px;
-    color: black;
+    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     margin-bottom:20px;
@@ -58,5 +62,21 @@ body {
 
 .setup{
 	text-align: center;
+}
+
+.Logo h1{
+    color: floralwhite;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+a {
+    color: none;
+    text-decoration: none;
+}
+
+#SignUp {
+    padding-bottom: 20px;
 }
 
