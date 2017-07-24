@@ -1,14 +1,5 @@
-@font-face 
-{
-    font-family: Avenir;
-    src: url(“/QwkPass/fonts/AvenirNext.otf”) format(“opentype”);
-}
-
-
-
 /*-----------------------------------General Page ----------------------------------------*/
 body {
-	font-family: AvenirNext, sans-serif;
 	margin:0;
 	padding:0;
 	font-size: 20px;
@@ -26,19 +17,19 @@ header.smaller #logo{
 }
 
 header.smaller {
-    font-family: "Avenir", serif;
+    font-family: 'Play', sans-serif;
 	height:50px;
 	font-size: smaller;
 	opacity: .9;
 }
 
 header.smaller a{
-font-family: "Avenir", serif;
+font-family: 'Play', sans-serif;
 line-height: 30px;
 color:floralwhite;
 }
 header {
-    font-family: "Avenir", serif;
+    font-family: 'Play', sans-serif;
     position: fixed;
     top: 0;
     right: 0;
@@ -62,7 +53,7 @@ header {
 }
 
 header a {
-	font-family: "Avenir", serif;
+	font-family: 'Play', sans-serif;
 	color: transparent;
 	padding-right: 100px;
 	text-decoration: none;
@@ -76,7 +67,7 @@ header a {
 header {
 	font-weight: bold;   
     align-items: center;
-    font-family: "Avenir", serif;
+    font-family: 'Play', sans-serif;
     opacity: 0.5;
 }
 
@@ -124,7 +115,7 @@ header #logo {
 	height: 875px;
 }
 #features-intro{
-	font-family: "Avenir", serif;
+	font-family: 'Play', sans-serif;
 	text-align: center;
 	margin-right: 350px;
 	margin-left: 350px;
