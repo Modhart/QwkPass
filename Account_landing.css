@@ -8,9 +8,7 @@ body {
 
     /*background-image: url("https://raw.githubusercontent.com/jbajaj12/QwkPass/master/images/account_background.png");*/
     /*background-position: center;*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(16, 115, 178)
+	background-image: linear-gradient(-90deg, #10447F, #256774);
 }
 
 .floatbox{
@@ -33,13 +31,13 @@ body {
 .header {
     diplay: block;
     font-weight: normal;
-    color: dodgerblue;
+    color: #A0D8E0;
     font-size: 40px;
 }
 
 .button {
     display: inline-block;
-    background-color: rgb(16, 115, 178);
+    background-color: #A0D8E0;
     border: none;
     border-radius: 12px;
     color: white;

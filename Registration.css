@@ -13,7 +13,7 @@ a {
 body {
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgb(16, 115, 178)
+   	background-image: linear-gradient(-90deg, #10447F, #256774);
 }
 
 .Registration {
