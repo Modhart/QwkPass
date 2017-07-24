@@ -79,7 +79,11 @@ $(document).ready(function() {
     alert($('#txtpassword').val());
     var email = ($('#txtemail').val());
     var password = ($('#txtpassword').val());
-      
+    
+     if(email && password){
+        $(location).attr('href', 'Account_Management.html');
+    }
+    
     if(!email || !password){
      return console.log('email and password required');
    }
@@ -100,6 +104,11 @@ $(document).ready(function() {
     var email = ($('#txtemail').val());
     var password = ($('#txtpassword').val());
       
+      
+     if(email && password){
+        $(location).attr('href', 'Account_Management.html');
+    }
+    
     if(!email || !password){
      return console.log('email and password required');
    }
