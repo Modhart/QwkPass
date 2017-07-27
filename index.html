@@ -159,13 +159,13 @@
  
 <!-----------------------------------Get Started ---------------------------------------->
 <div class="setup" id="setup">
-<a href="Account_landing.html"><h2>Get Started</h2></a>
-
-  <input label="txtemail" id="txtemail" type="text" value="Email" placeholder="Email"/>
-  <input label="txtpassword" id="txtpassword" type="password" value="{{password::input}}" placeholder="Password"/>
-  <button on-click="signIn" id="btnLogin" class="button">Log in</button>
-  <button on-click="register" id="btnSignUp" class="button">Sign Up</button>
-  <button on-click="signOut" id="btnLogout" class="button hide">Log out</button>
+<!--<a href="Account_landing.html"><h2>Get Started</h2></a>-->
+  <button on-click="getStarted" id="buttongetstarted" class="buttongetstarted"><span>Get Started</span></button>
+  <!--<input label="txtemail" id="txtemail" type="text" value="Email" placeholder="Email"/>-->
+  <!--<input label="txtpassword" id="txtpassword" type="password" value="{{password::input}}" placeholder="Password"/>-->
+  <!--<button on-click="signIn" id="btnLogin" class="button">Log in</button>-->
+  <!--<button on-click="register" id="btnSignUp" class="button">Sign Up</button>-->
+  <!--<button on-click="signOut" id="btnLogout" class="button hide">Log out</button>-->
   </div>
 </div>
 
@@ -190,6 +190,12 @@
 
 
 <script>
+
+$(document).ready(function() {
+  $('#buttongetstarted').click(function() {
+    window.location = "Account_landing.html";
+  });
+});
 
 $(document).ready(function() {
   $('#btnLogin').click(function() {
