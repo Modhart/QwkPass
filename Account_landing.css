@@ -9,6 +9,9 @@ body {
     /*background-image: url("https://raw.githubusercontent.com/jbajaj12/QwkPass/master/images/account_background.png");*/
     /*background-position: center;*/
 	background-image: linear-gradient(-90deg, #10447F, #256774);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .floatbox{
@@ -19,7 +22,7 @@ body {
     font-size: 13px;
     line-height: 1.4em;
     width: 400px;
-    left: 35%;
+    left: 40%;
     margin-top: -100px;
     position: absolute;
     text-align: center;

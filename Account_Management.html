@@ -20,39 +20,80 @@
     * {
     font-family: 'Nunito', sans-serif;
     }
-</style>    
+</style> 
+
+
     
 </head>
 
 
 <body>
+    <center>
  <div class="Logo">
        <a href="index.html"><h1>QwkPass</h1></a>
  </div> 
  
- <div class="floatbox">
-     <p> Test Payments </p>
+ <div class ="Account_info">
+     <h2>Account Information</h2>
+    <p>Edit Name</p>
+    <p>Edit Home Address</p>
+    <p>Edit Email Address</p>
+ </div>
+ 
+ <div class ="Billing">
+     <h2> Billing Information</h2>
+    <p>Manage Payment method</p>
+    <p>Manage QwkPass Tag</p>
+    <p>Payment History</p>
+    <p>Manage Subscription</p>
+ </div>
+ 
+ <div class = "Trip">
+     <h2>Trip Information</h2>
+     <p>Schedule a trip</p>
+     <p>Purchase a trip for someone else</p>
+     <p>Trip History</p>
+ </div>
+ 
+ <div class = "Help">
+     <h2>Help</h2>
+    <p>Customer Service</p>
+    <p>FAQ</p>
+ </div>
+ 
+ <button on-click="signOut" id="btnLogout" class="button hide">Log out</button>
+ 
+ </center>
+ 
+ 
+ 
+ 
+ 
+ 
+<!-- /**************** Sample Stripe Form ****************/-->
+<!-- <div class="floatbox">-->
+<!--     <p> Test Payments </p>-->
      
-     t src="https://js.stripe.com/v3/"></script>
+<!--     t src="https://js.stripe.com/v3/"></script>-->
 
-<form action="/charge" method="post" id="payment-form">
-  <div class="form-row">
-    <label for="card-element">
-      Credit or debit card
-    </label>
-    <div id="card-element">
+<!--<form action="/charge" method="post" id="payment-form">-->
+<!--  <div class="form-row">-->
+<!--    <label for="card-element">-->
+<!--      Credit or debit card-->
+<!--    </label>-->
+<!--    <div id="card-element">-->
       <!-- a Stripe Element will be inserted here. -->
-    </div>
+<!--    </div>-->
 
     <!-- Used to display form errors -->
-    <div id="card-errors" role="alert"></div>
-  </div>
+<!--    <div id="card-errors" role="alert"></div>-->
+<!--  </div>-->
 
-  <button>Submit Payment</button>
-</form>
-
-
- </div>
+<!--  <button>Submit Payment</button>-->
+<!--</form>-->
+<!-- </div>-->
+ 
+<!-- /**************** Sample Stripe Form ****************/-->
     
     
     
