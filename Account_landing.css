@@ -20,13 +20,17 @@ body {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
     color: #999;
     font-size: 13px;
-    line-height: 1.4em;
-    width: 400px;
-    left: 40%;
-    margin-top: -100px;
-    position: absolute;
+    /*left: 40%;*/
+    /*margin-top: -100px;*/
+    /*position: absolute;*/
+    /*text-align: center;*/
+    /*top: 40%;*/
+    /*text-align: center;*/
+    /*top: 50%;*/
+    /*width: 100%;*/
+    /*border-radius: 12px;*/
     text-align: center;
-    top: 40%;
+    width: 400px;
     border-radius: 12px;
 }
 
@@ -34,7 +38,7 @@ body {
 .header {
     diplay: block;
     font-weight: normal;
-    color: #A0D8E0;
+    color: black;
     font-size: 40px;
 }
 
