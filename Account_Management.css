@@ -16,7 +16,7 @@ a {
 }
 
 .Account{
-    display: inline;
+    display: inline-block;
 }
 
 .Account_info {
