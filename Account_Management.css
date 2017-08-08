@@ -7,8 +7,6 @@ body {
 .Logo h1 {
     color: floralwhite;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 200px;
     font-size: 50px;
 }
 
@@ -17,16 +15,18 @@ a {
     color: none;
 }
 
+.Account{
+    display: inline;
+}
 
 .Account_info {
-   display: inline-block;
   margin-right: 100px;
-  margin-left: 250px;
+  margin-bottom: 10px;
   float: left;
   
    border: 2px black;
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 260px;
     background-color:white;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
     border-radius: 12px;
@@ -35,7 +35,7 @@ a {
 
 .Billing {
    margin-right: 100px;
-  display: inline-block;
+   margin-bottom: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -51,7 +51,7 @@ a {
 
 .Help {
    margin-right: 100px;
-   display: inline-block;
+   margin-bottom: 10px;
    padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -67,7 +67,7 @@ a {
 
 .Trip {
    margin-right: 100px;
-   display: inline-block;
+   margin-bottom: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
