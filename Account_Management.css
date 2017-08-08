@@ -17,6 +17,7 @@ a {
 
 .Account{
     display: inline-block;
+    margin-left: 5%;
 }
 
 .Account_info {
