@@ -91,7 +91,14 @@ $('#btnLogin').click(function() {
     });
     //Need to fix double click login issue
     
-    var user = firebase.auth().currentUser;
+ 
+
+    
+});
+});
+
+$(document).ready(function() {
+ var user = firebase.auth().currentUser;
 
     if (user) {
       console.log(user);
@@ -99,12 +106,8 @@ $('#btnLogin').click(function() {
     } else {
       // No user is signed in.
     }
- 
-
     
 });
-});
-
 
 </script>
 
