@@ -161,11 +161,11 @@
 <div class="setup" id="setup">
 <!--<a href="Account_landing.html"><h2>Get Started</h2></a>-->
   <button on-click="getStarted" id="buttongetstarted" class="buttongetstarted"><span>Get Started</span></button>
-  <input label="txtemail" id="txtemail" type="text" value="Email" placeholder="Email"/>
-  <input label="txtpassword" id="txtpassword" type="password" value="{{password::input}}" placeholder="Password"/>
-  <button on-click="signIn" id="btnLogin" class="button">Log in</button>
-  <button on-click="register" id="btnSignUp" class="button">Sign Up</button>
-  <button on-click="signOut" id="btnLogout" class="button hide">Log out</button>
+  <!--<input label="txtemail" id="txtemail" type="text" value="Email" placeholder="Email"/>-->
+  <!--<input label="txtpassword" id="txtpassword" type="password" value="{{password::input}}" placeholder="Password"/>-->
+  <!--<button on-click="signIn" id="btnLogin" class="button">Log in</button>-->
+  <!--<button on-click="register" id="btnSignUp" class="button">Sign Up</button>-->
+  <!--<button on-click="signOut" id="btnLogout" class="button hide">Log out</button>-->
   </div>
 </div>
 
@@ -197,43 +197,43 @@ $(document).ready(function() {
   });
 });
 
-$(document).ready(function() {
-  $('#btnLogin').click(function() {
-    alert($('#txtemail').val());
-    alert($('#txtpassword').val());
-    var email = ($('#txtemail').val());
-    var password = ($('#txtpassword').val());
+// $(document).ready(function() {
+//   $('#btnLogin').click(function() {
+//     alert($('#txtemail').val());
+//     alert($('#txtpassword').val());
+//     var email = ($('#txtemail').val());
+//     var password = ($('#txtpassword').val());
       
-    if(!email || !password){
-     return console.log('email and password required');
-   }
+//     if(!email || !password){
+//     return console.log('email and password required');
+//   }
    
-   firebase.auth().signInWithEmailAndPassword(email, password)
-    .catch(function(error) {
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      console.log('signIn error', error);
-    });
-  });
-});
+//   firebase.auth().signInWithEmailAndPassword(email, password)
+//     .catch(function(error) {
+//       var errorCode = error.code;
+//       var errorMessage = error.message;
+//       console.log('signIn error', error);
+//     });
+//   });
+// });
 
-$(document).ready(function() {
-  $('#btnSignUp').click(function() {
-    alert($('#txtemail').val());
-    alert($('#txtpassword').val());
-    var email = ($('#txtemail').val());
-    var password = ($('#txtpassword').val());
+// $(document).ready(function() {
+//   $('#btnSignUp').click(function() {
+//     alert($('#txtemail').val());
+//     alert($('#txtpassword').val());
+//     var email = ($('#txtemail').val());
+//     var password = ($('#txtpassword').val());
       
-    if(!email || !password){
-     return console.log('email and password required');
-   }
+//     if(!email || !password){
+//     return console.log('email and password required');
+//   }
    
-   firebase.auth().createUserWithEmailAndPassword(email, password)
-    .catch(function(error) {
-      console.log('sigup error', error);
-    });
-  });
-});
+//   firebase.auth().createUserWithEmailAndPassword(email, password)
+//     .catch(function(error) {
+//       console.log('sigup error', error);
+//     });
+//   });
+// });
 
 
 </script>
