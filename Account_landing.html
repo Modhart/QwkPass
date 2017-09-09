@@ -96,6 +96,9 @@ $(document).ready(function() {
       console.log('signIn error', error);
     });
     
+        console.log(email);
+        console.log(password);
+    
     //  firebase.auth().createUserWithEmailAndPassword(email, password)
     // .catch(function(error) {
     //   console.log('sigup error', error);
@@ -105,7 +108,7 @@ $(document).ready(function() {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
         // User is signed in.
-        alert('Sign up successful');
+        alert('Login successful');
          $(location).attr('href', 'Account_Management.html');
       } else {
         // No user is signed in.
@@ -114,33 +117,7 @@ $(document).ready(function() {
   });
 });
 
-$(document).ready(function() {
-  $('#btnSignUp').click(function() {
-    alert($('#txtemail').val());
-    alert($('#txtpassword').val());
-    var email = ($('#txtemail').val());
-    var password = ($('#txtpassword').val());
-      
-      
-    if(!email || !password){
-     return console.log('email and password required');
-   }
-   
-   firebase.auth().createUserWithEmailAndPassword(email, password)
-    .catch(function(error) {
-      console.log('sigup error', error);
-    });
-    
-    var user = firebase.auth().currentUser;
-    alert(user);
-    if (user) {
-      // User is signed in.
-    } else {
-      // No user is signed in.
-    }
-        
-  });
-});
+
 
 </script>
 
