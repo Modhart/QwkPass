@@ -71,8 +71,8 @@
 <script>
 $(document).ready(function() {
 $('#btnLogin').click(function() {
-    alert($('#txtemail').val());
-    alert($('#txtpassword').val());
+    //alert($('#txtemail').val());
+   // alert($('#txtpassword').val());
     var email = ($('#txtemail').val());
     var password = ($('#txtpassword').val());
     
@@ -84,7 +84,9 @@ $('#btnLogin').click(function() {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
-        alert(error.message);
+        if(error){
+            alert(error.message);
+        }
     // ...
     });
     

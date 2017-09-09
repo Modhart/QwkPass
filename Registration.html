@@ -122,8 +122,8 @@
 
 $(document).ready(function() {
   $('#btnSignUp').click(function() {
-    alert($('#txtemail').val());
-    alert($('#txtpassword').val());
+    //alert($('#txtemail').val());
+    //alert($('#txtpassword').val());
     var email = ($('#txtemail').val());
     var password = ($('#txtpassword').val());
 
@@ -134,7 +134,7 @@ $(document).ready(function() {
    firebase.auth().createUserWithEmailAndPassword(email, password)
     .catch(function(error) {
       console.log('sigup error', error);
-      alert(error);
+      //alert(error);
     });
     
     $(location).attr('href', 'Account_landing.html');
