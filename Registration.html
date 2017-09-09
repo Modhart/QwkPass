@@ -141,8 +141,9 @@ $(document).ready(function() {
       if (user) {
         // User is signed in.
         alert('Sign up successful');
-         $(location).attr('href', 'Account_Management.html');
+        $(location).attr('href', 'Account_landing.html');
       } else {
+          alert('Sign up failed');
         // No user is signed in.
       }
     });
