@@ -135,12 +135,13 @@ $(document).ready(function() {
    firebase.auth().createUserWithEmailAndPassword(email, password)
     .catch(function(error) {
       console.log('sigup error', error);
-      alert($(errorMessage));
+      alert(error);
     });
     
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
         // User is signed in.
+        alert('Sign up successful');
          $(location).attr('href', 'Account_Management.html');
       } else {
         // No user is signed in.

@@ -81,9 +81,9 @@ $(document).ready(function() {
     var email = ($('#txtemail').val());
     var password = ($('#txtpassword').val());
     
-     if(email && password){
-        $(location).attr('href', 'Account_Management.html');
-    }
+    //  if(email && password){
+    //     $(location).attr('href', 'Account_Management.html');
+    // }
     
     if(!email || !password){
      return console.log('email and password required');
@@ -94,6 +94,22 @@ $(document).ready(function() {
       var errorCode = error.code;
       var errorMessage = error.message;
       console.log('signIn error', error);
+    });
+    
+    //  firebase.auth().createUserWithEmailAndPassword(email, password)
+    // .catch(function(error) {
+    //   console.log('sigup error', error);
+    //   alert(error);
+    // });
+    
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        // User is signed in.
+        alert('Sign up successful');
+         $(location).attr('href', 'Account_Management.html');
+      } else {
+        // No user is signed in.
+      }
     });
   });
 });
