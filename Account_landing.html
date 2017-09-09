@@ -49,7 +49,7 @@
 </head>    
 
 <body>
-    <center>
+<center>
     <div class="Logo">
        <a href="index.html"><h1>QwkPass</h1></a>
     </div>
@@ -57,66 +57,40 @@
     <div class="floatbox">
     <h1 class="header">Account Login</h1>
     <p id="SignUp">Don't have an account? <a href="Registration.html">Sign Up</a></p>
-  <ul style=" padding-left: 0px;">
-  <input label="txtemail" id="txtemail" type="text" placeholder="Email"/>
-  <input label="txtpassword" id="txtpassword" type="password" placeholder="Password"/>
-  </ul>
-  <button on-click="signIn" id="btnLogin" class="button">Log in</button>
-  <!--<button on-click="register" id="btnSignUp" class="button">Sign Up</button>-->
-  <!--<button on-click="signOut" id="btnLogout" class="button hide">Log out</button>-->
+      <ul style=" padding-left: 0px;">
+          <input label="txtemail" id="txtemail" type="text" placeholder="Email"/>
+          <input label="txtpassword" id="txtpassword" type="password" placeholder="Password"/>
+      </ul>
+    <button on-click="signIn" id="btnLogin" class="button">Log in</button>
 
   </div>
   </div>
-</div>
 </center>
 </body>
 </html>
 
 <script>
-
-$(document).ready(function() {
-  $('#btnLogin').click(function() {
+$(document).login(function() {
+$('#btnLogin').click(function() {
     alert($('#txtemail').val());
     alert($('#txtpassword').val());
     var email = ($('#txtemail').val());
     var password = ($('#txtpassword').val());
     
-    //  if(email && password){
-    //     $(location).attr('href', 'Account_Management.html');
-    // }
-    
     if(!email || !password){
-     return console.log('email and password required');
-   }
-   
-   firebase.auth().signInWithEmailAndPassword(email, password)
-    .catch(function(error) {
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      console.log('signIn error', error);
+     alert('email and password required');
+    }
+    
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+    // ...
     });
     
-        console.log(email);
-        console.log(password);
-    
-    //  firebase.auth().createUserWithEmailAndPassword(email, password)
-    // .catch(function(error) {
-    //   console.log('sigup error', error);
-    //   alert(error);
-    // });
-    
-    firebase.auth().onAuthStateChanged(function(user) {
-      if (user) {
-        // User is signed in.
-        alert('Login successful');
-         $(location).attr('href', 'Account_Management.html');
-      } else {
-        // No user is signed in.
-      }
-    });
-  });
+    alert('loggingIn');
 });
-
+});
 
 
 </script>
