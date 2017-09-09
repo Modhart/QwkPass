@@ -139,11 +139,9 @@ $(document).ready(function() {
     
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
-        // User is signed in.
-        alert('Sign up successful');
+        // User is signed in
         $(location).attr('href', 'Account_landing.html');
       } else {
-          alert('Sign up failed,try again');
            $(location).attr('href', 'Registration.html');
         // No user is signed in.
       }
