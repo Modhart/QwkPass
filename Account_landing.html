@@ -1,5 +1,5 @@
 <!doctype html>
-
+<script src="https://js.stripe.com/v3/"></script>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -88,15 +88,6 @@ $('#btnLogin').click(function() {
     });
     
     
-    firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-       alert('Login verified');
-       $(location).attr('href', 'Account_Management.html');
-  } else {
-    // User is signed out.
-    // ...
-  }
-});
 });
 });
 
