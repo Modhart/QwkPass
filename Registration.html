@@ -143,7 +143,8 @@ $(document).ready(function() {
         alert('Sign up successful');
         $(location).attr('href', 'Account_landing.html');
       } else {
-          alert('Sign up failed');
+          alert('Sign up failed,try again');
+           $(location).attr('href', 'Registration.html');
         // No user is signed in.
       }
     });
