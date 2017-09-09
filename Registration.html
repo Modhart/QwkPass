@@ -135,6 +135,7 @@ $(document).ready(function() {
    firebase.auth().createUserWithEmailAndPassword(email, password)
     .catch(function(error) {
       console.log('sigup error', error);
+      alert($(errorMessage));
     });
     
     firebase.auth().onAuthStateChanged(function(user) {
