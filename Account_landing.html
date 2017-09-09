@@ -87,7 +87,16 @@ $('#btnLogin').click(function() {
     // ...
     });
     
-    alert('Login verified');
+    
+    firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+       alert('Login verified');
+       $(location).attr('href', 'Account_Management.html');
+  } else {
+    // User is signed out.
+    // ...
+  }
+});
 });
 });
 
