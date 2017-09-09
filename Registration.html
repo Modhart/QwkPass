@@ -52,26 +52,26 @@
         <table>
         <tr>
             <td><p id="Field_Names">First Name</p></td>
-            <td><input  class ="fields_input" label="firstname" id="firstname" type="text" value="First" placeholder="firstname"/></p></td>
+            <td><input  class ="fields_input" label="firstname" id="firstname" type="text" placeholder="firstname"/></p></td>
         </tr>
         
         <tr>
             <td><p id="Field_Names">Last Name</p></td>
-            <td><input class ="fields_input" label="lastname" id="lastname" type="text" value="Last" placeholder="lastname"/></p></td>
+            <td><input class ="fields_input" label="lastname" id="lastname" type="text" placeholder="lastname"/></p></td>
         </tr>
         
         <tr>
             <td><p id="Field_Names">Email</p></td>
-            <td><input class ="fields_input" label="txtemail" id="txtemail" type="text" value="Email" placeholder="Email"/></p></td>
+            <td><input class ="fields_input" label="txtemail" id="txtemail" type="text" placeholder="Email"/></p></td>
         </tr>
         
         <tr>
             <td><p id="Field_Names">Password  </p></td>
-            <td><input class ="fields_input" label="txtpassword" id="txtpassword" type="password" value="{{password::input}}" placeholder="Password"/></p></td>
+            <td><input class ="fields_input" label="txtpassword" id="txtpassword" type="password" placeholder="Password"/></p></td>
         </tr>
          <tr>
             <td><p id="Field_Names">Confirm Password  </p></td>
-            <td><input class ="fields_input" label="txtpassword" id="txtpassword" type="password" value="{{password::input}}" placeholder="Password"/></p></td>
+            <td><input class ="fields_input" label="txtpassword" id="txtpassword" type="password" placeholder="Password"/></p></td>
         </tr>
         
         <!-- <p id="Field_Names">Last Name <input class ="fields_input" label="lastname" id="lastname" type="text" value="Last" placeholder="lastname"/></p>-->
@@ -137,11 +137,11 @@ $(document).ready(function() {
       alert(error);
     });
     
-    alert('Sign up successful');
-    
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
         // User is signed in.
+        alert('Sign up successful');
+         $(location).attr('href', 'Account_Management.html');
       } else {
         // No user is signed in.
       }
