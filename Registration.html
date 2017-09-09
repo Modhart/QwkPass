@@ -136,9 +136,15 @@ $(document).ready(function() {
     .catch(function(error) {
       console.log('sigup error', error);
     });
-    if(email && password){
-        $(location).attr('href', 'Account_Management.html');
-    }
+    
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        // User is signed in.
+         $(location).attr('href', 'Account_Management.html');
+      } else {
+        // No user is signed in.
+      }
+});
   });
 });
 
