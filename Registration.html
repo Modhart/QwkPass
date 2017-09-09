@@ -137,15 +137,17 @@ $(document).ready(function() {
       alert(error);
     });
     
-    firebase.auth().onAuthStateChanged(function(user) {
-      if (user) {
-        // User is signed in
-        $(location).attr('href', 'Account_landing.html');
-      } else {
-           $(location).attr('href', 'Registration.html');
-        // No user is signed in.
-      }
-    });
+    $(location).attr('href', 'Account_landing.html');
+    
+//     firebase.auth().onAuthStateChanged(function(user) {
+//       if (user) {
+//         // User is signed in
+//         $(location).attr('href', 'Account_landing.html');
+//       } else {
+//           $(location).attr('href', 'Registration.html');
+//         // No user is signed in.
+//       }
+//     });
   });
 });
 
