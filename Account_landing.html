@@ -75,7 +75,6 @@ $('#btnLogin').click(function() {
    // alert($('#txtpassword').val());
     var email = ($('#txtemail').val());
     var password = ($('#txtpassword').val());
-     var user = firebase.auth().currentUser;
     
     if(!email || !password){
      alert('email and password required');
@@ -85,27 +84,21 @@ $('#btnLogin').click(function() {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
-        var user = firebase.auth().currentUser;
+       
+           // alert(error.message);
         
-       if (user) {
+    // ...
+    });
+    //Need to fix double click login issue
+    
+    var user = firebase.auth().currentUser;
+
+    if (user) {
       console.log(user);
       $(location).attr('href', 'Account_Management.html');
     } else {
       // No user is signed in.
     }
-           // alert(error.message);
-        
-    // ...
-    });
-    
-    // var user = firebase.auth().currentUser;
-
-    // if (user) {
-    //   console.log(user);
-    //   $(location).attr('href', 'Account_Management.html');
-    // } else {
-    //   // No user is signed in.
-    // }
  
 
     
