@@ -1,15 +1,11 @@
 <!doctype html>
 
-<!--var stripe = Stripe('pk_test_D91WayCvhLBZNvpZbDSecmxt');-->
-<!--var elements = stripe.elements();-->
 <script src="https://js.stripe.com/v3/"></script>
 
 
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <script src="https://js.braintreegateway.com/web/3.22.2/js/client.min.js"></script>
-
     
     <title>Account_Portal</title>
     <meta name="account_portal" content="QwkPass_accounts">
@@ -125,23 +121,6 @@
     <p>FAQ</p>
  </div>
  </div>
- 
-  <div id="dropin-container"></div>
-  <button id="submit-button">Request payment method</button>
-  <script>
-    var button = document.querySelector('#submit-button');
-
-    braintree.dropin.create({
-      authorization: 'CLIENT_TOKEN_FROM_SERVER',
-      container: '#dropin-container'
-    }, function (createErr, instance) {
-      button.addEventListener('click', function () {
-        instance.requestPaymentMethod(function (err, payload) {
-          // Submit payload.nonce to your server
-        });
-      });
-    });
-  </script>
  
  <button on-click="signOut" id="signOut" class="button">Log out</button>
  
