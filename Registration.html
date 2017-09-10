@@ -145,17 +145,29 @@ $(document).ready(function() {
     var name, email, photoUrl, uid, emailVerified;
 
     if (user != null) {
-    name = firstname;
-    email = user.email;
-    photoUrl = user.photoURL;
-    emailVerified = user.emailVerified;
     uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
                    // this value to authenticate with your backend server, if
                    // you have one. Use User.getToken() instead.
     }
     
+
+        user.updateProfile({
+          displayName: firstname,
+        }).then(function() {
+          // Update successful.
+        }).catch(function(error) {
+          // An error happened.
+        });
     console.log(uid);
-    console.log(name);
+    console.log(displayName);
+    
+    function writeUserData(userId, name) {
+        firebase.database().ref('users/' + userId).set({
+            username: name,
+        });
+        }
+    
+    writeUserData(uid,displayName);
     
     //$(location).attr('href', 'Account_landing.html');
     
