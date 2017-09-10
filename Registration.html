@@ -129,7 +129,7 @@ $(document).ready(function() {
     //alert($('#txtpassword').val());
     var email = ($('#txtemail').val());
     var password = ($('#txtpassword').val());
-    var name = ($('firstname').val());
+    var firstname = ($('firstname').val());
 
     if(!email || !password){
      return console.log('email and password required');
@@ -145,7 +145,7 @@ $(document).ready(function() {
     var name, email, photoUrl, uid, emailVerified;
 
     if (user != null) {
-    name = user.displayName;
+    name = firstname;
     email = user.email;
     photoUrl = user.photoURL;
     emailVerified = user.emailVerified;
