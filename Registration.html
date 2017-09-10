@@ -169,11 +169,16 @@ $(document).ready(function() {
 </script>
 
 <script>
-    var name, email, photoUrl, uid, emailVerified;
     var firstname = ($('firstname').val());
      var user = firebase.auth().currentUser;
-     uid = user.uid; 
     
+      if (user != null) {
+    uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+                   // this value to authenticate with your backend server, if
+                   // you have one. Use User.getToken() instead.
+    }
+    
+
     console.log(uid);
     
     function writeUserData(uid) {
