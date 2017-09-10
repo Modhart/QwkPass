@@ -151,23 +151,16 @@ $(document).ready(function() {
     }
     
 
-        user.updateProfile({
-          displayName: firstname,
-        }).then(function() {
-          // Update successful.
-        }).catch(function(error) {
-          // An error happened.
-        });
     console.log(uid);
-    console.log(displayName);
+ 
     
-    function writeUserData(userId, name) {
+    function writeUserData(userId) {
         firebase.database().ref('users/' + userId).set({
-            username: name,
+            username: "Jay",
         });
         }
     
-    writeUserData(uid,displayName);
+    writeUserData(uid);
     
     //$(location).attr('href', 'Account_landing.html');
     
