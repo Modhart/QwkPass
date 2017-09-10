@@ -140,27 +140,7 @@ $(document).ready(function() {
       console.log('sigup error', error);
       //alert(error);
     });
-    
-    var user = firebase.auth().currentUser;
-    var name, email, photoUrl, uid, emailVerified;
 
-    if (user != null) {
-    uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
-                   // this value to authenticate with your backend server, if
-                   // you have one. Use User.getToken() instead.
-    }
-    
-
-    console.log(uid);
- 
-    
-    function writeUserData(userId) {
-        firebase.database().ref('users/' + userId).set({
-            username: "Jay",
-        });
-        }
-    
-    writeUserData(uid);
     
     //$(location).attr('href', 'Account_landing.html');
     
@@ -178,5 +158,23 @@ $(document).ready(function() {
 
 </script>
 
+<script type="text/javascript">
+ var user = firebase.auth().currentUser;
+    var name, email, photoUrl, uid, emailVerified;
+
+    if (user != null) {
+    uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+                   // this value to authenticate with your backend server, if
+                   // you have one. Use User.getToken() instead.
+    }
+ function writeUserData(userId) {
+        firebase.database().ref('users/' + userId).set({
+            username: firstname,
+        });
+        }
+     console.log(uid);
+    writeUserData(uid);
+    
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
