@@ -170,14 +170,15 @@ $(document).ready(function() {
 
 <script>
     var name, email, photoUrl, uid, emailVerified;
+    var firstname = ($('firstname').val());
      var user = firebase.auth().currentUser;
      uid = user.uid; 
     
+    console.log(uid);
     
     function writeUserData(uid) {
         firebase.database().ref('users/' + uid).set({
             username: firstname,
-            last: lastname,
             
         });
         }
