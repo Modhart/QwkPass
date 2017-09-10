@@ -140,6 +140,8 @@ $(document).ready(function() {
       console.log('sigup error', error);
       //alert(error);
     });
+    
+  
 
     
     //$(location).attr('href', 'Account_landing.html');
@@ -169,11 +171,13 @@ $(document).ready(function() {
     }
  function writeUserData(userId) {
         firebase.database().ref('users/' + userId).set({
-            firstname: firstname,
+            username: firstname,
         });
         }
      console.log(uid);
     writeUserData(uid);
+    
+    
     
 </script>
 
