@@ -79,7 +79,7 @@
         <!--<p id="Field_Names">Password  <input class ="fields_input" label="txtpassword" id="txtpassword" type="password" value="{{password::input}}" placeholder="Password"/></p>-->
         <!--<p id="Field_Names">Confirm Password   <input class ="fields_input" label="txtpassword" id="txtpassword" type="password" value="{{password::input}}" placeholder="Password"/></p>-->
         </table>
-        <button on-click="btnSignUp" id="btnSignUp" class="button">Sign Up</button>
+        <button on-click="btnSignUp()" id="btnSignUp" class="button">Sign Up</button>
     </div>
     </center>
     
@@ -99,6 +99,7 @@
 </html>
 
 <script>
+
 
 // $(document).ready(function() {
 //   $('#btnLogin').click(function() {
@@ -126,6 +127,7 @@ $(document).ready(function() {
     //alert($('#txtpassword').val());
     var email = ($('#txtemail').val());
     var password = ($('#txtpassword').val());
+    var name = ($('firstname').val());
 
     if(!email || !password){
      return console.log('email and password required');
@@ -136,6 +138,15 @@ $(document).ready(function() {
       console.log('sigup error', error);
       //alert(error);
     });
+    
+     function writeUserData(name, email) {
+      firebase.database().ref('users').set({
+        username: name,
+        email: email,
+      });
+    }
+    
+    writeUserData(name,email);
     
     $(location).attr('href', 'Account_landing.html');
     
