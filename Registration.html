@@ -130,6 +130,7 @@ $(document).ready(function() {
     var email = ($('#txtemail').val());
     var password = ($('#txtpassword').val());
     var firstname = ($('firstname').val());
+    var lastname = ($('lastname').val());
 
     if(!email || !password){
      return console.log('email and password required');
@@ -169,7 +170,10 @@ $(document).ready(function() {
     }
  function writeUserData(userId) {
         firebase.database().ref('users/' + userId).set({
-            username: firstname,
+            first: firstname,
+            last: lastname,
+            email: email,
+            password: password,
         });
         }
      console.log(uid);
