@@ -122,6 +122,7 @@
 // });
 
 
+
 $(document).ready(function() {
   $('#btnSignUp').click(function() {
     //alert($('#txtemail').val());
@@ -140,17 +141,7 @@ $(document).ready(function() {
       //alert(error);
     });
     
-    var user = firebase.auth().currentUser;
     
-      if (user != null) {
-    uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
-                   // this value to authenticate with your backend server, if
-                   // you have one. Use User.getToken() instead.
-    }
-    
-
-    console.log(uid);
- 
     
     //$(location).attr('href', 'Account_landing.html');
     
@@ -169,10 +160,10 @@ $(document).ready(function() {
 </script>
 
 <script>
-    var firstname = ($('firstname').val());
-     var user = firebase.auth().currentUser;
-    
-      if (user != null) {
+var user = firebase.auth().currentUser;
+    var name, email, photoUrl, uid, emailVerified;
+
+    if (user != null) {
     uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
                    // this value to authenticate with your backend server, if
                    // you have one. Use User.getToken() instead.
@@ -180,11 +171,11 @@ $(document).ready(function() {
     
 
     console.log(uid);
+ 
     
-    function writeUserData(uid) {
-        firebase.database().ref('users/' + uid).set({
-            username: firstname,
-            
+    function writeUserData(userId) {
+        firebase.database().ref('users/' + userId).set({
+            username: "David",
         });
         }
     
