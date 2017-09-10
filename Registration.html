@@ -121,6 +121,8 @@
 //   });
 // });
 
+
+
 $(document).ready(function() {
   $('#btnSignUp').click(function() {
     //alert($('#txtemail').val());
@@ -139,16 +141,22 @@ $(document).ready(function() {
       //alert(error);
     });
     
-     function writeUserData(name, email) {
-      firebase.database().ref('users').set({
-        username: name,
-        email: email,
-      });
+    var user = firebase.auth().currentUser;
+    var name, email, photoUrl, uid, emailVerified;
+
+    if (user != null) {
+    name = user.displayName;
+    email = user.email;
+    photoUrl = user.photoURL;
+    emailVerified = user.emailVerified;
+    uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+                   // this value to authenticate with your backend server, if
+                   // you have one. Use User.getToken() instead.
     }
     
-    writeUserData(name,email);
+    console.log(uid);
     
-    $(location).attr('href', 'Account_landing.html');
+    //$(location).attr('href', 'Account_landing.html');
     
 //     firebase.auth().onAuthStateChanged(function(user) {
 //       if (user) {
