@@ -170,7 +170,9 @@ $(document).ready(function() {
 
 <script>
     var name, email, photoUrl, uid, emailVerified;
-
+     var user = firebase.auth().currentUser;
+     uid = user.uid; 
+    
     
     function writeUserData(uid) {
         firebase.database().ref('users/' + uid).set({
@@ -180,6 +182,7 @@ $(document).ready(function() {
         });
         }
     
+    writeUserData(uid);
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
