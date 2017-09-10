@@ -140,7 +140,17 @@ $(document).ready(function() {
       //alert(error);
     });
     
+    var user = firebase.auth().currentUser;
     
+      if (user != null) {
+    uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+                   // this value to authenticate with your backend server, if
+                   // you have one. Use User.getToken() instead.
+    }
+    
+
+    console.log(uid);
+ 
     
     //$(location).attr('href', 'Account_landing.html');
     
@@ -159,18 +169,8 @@ $(document).ready(function() {
 </script>
 
 <script>
-var user = firebase.auth().currentUser;
     var name, email, photoUrl, uid, emailVerified;
 
-    if (user != null) {
-    uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
-                   // this value to authenticate with your backend server, if
-                   // you have one. Use User.getToken() instead.
-    }
-    
-
-    console.log(uid);
- 
     
     function writeUserData(uid) {
         firebase.database().ref('users/' + uid).set({
@@ -179,7 +179,6 @@ var user = firebase.auth().currentUser;
             
         });
         }
-    writeUserData(uid);
     
 </script>
 
